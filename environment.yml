@@ -1,0 +1,87 @@
+name: intelligent-rag
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  # Python version
+  - python=3.10
+  
+  # Core ML/NLP libraries (from conda-forge for better compatibility)
+  - pytorch>=2.0.0
+  - numpy>=1.21.0
+  - scipy>=1.9.0
+  - scikit-learn>=1.3.0
+  
+  # Data processing
+  - pandas>=2.0.0
+  - pyarrow>=12.0.0
+  
+  # Configuration and utilities
+  - pyyaml>=6.0
+  - click>=8.1.0
+  - tqdm>=4.65.0
+  
+  # API clients
+  - requests>=2.31.0
+  
+  # Testing
+  - pytest>=7.4.0
+  - pytest-cov>=4.1.0
+  
+  # Development tools
+  - black>=23.0.0
+  - isort>=5.12.0
+  - flake8>=6.0.0
+  
+  # Jupyter notebooks
+  - jupyter>=1.0.0
+  - ipykernel>=6.25.0
+  - matplotlib>=3.7.0
+  - seaborn>=0.12.0
+  
+  # System tools
+  - pip
+  
+  # Install remaining packages via pip
+  - pip:
+    # Transformers and NLP
+    - transformers>=4.30.0
+    - sentence-transformers>=2.2.0
+    - spacy>=3.6.0
+    - nltk>=3.8.0
+    - textstat>=0.7.0
+    
+    # Vector databases and search
+    - faiss-cpu>=1.7.4
+    - elasticsearch>=8.0.0
+    
+    # HuggingFace datasets
+    - datasets>=2.14.0
+    
+    # Additional utilities
+    - python-dotenv>=1.0.0
+    - rich>=13.0.0
+    
+    # API clients
+    - openai>=0.27.0
+    - httpx>=0.24.0
+    
+    # Evaluation and metrics
+    - evaluate>=0.4.0
+    - rouge-score>=0.1.2
+    - bert-score>=0.3.13
+    
+    # Logging and monitoring
+    - wandb>=0.15.0
+    - tensorboard>=2.13.0
+    
+    # Testing additional
+    - pytest-mock>=3.11.0
+    
+    # Development tools additional
+    - mypy>=1.5.0
+    
+    # Documentation
+    - sphinx>=7.0.0
+    - sphinx-rtd-theme>=1.3.0

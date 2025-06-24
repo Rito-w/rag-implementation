@@ -1,0 +1,275 @@
+# Default Configuration for Intelligent Adaptive RAG System
+# Based on analysis of 8 authoritative RAG papers and GasketRAG insights
+
+# System Configuration
+system:
+  version: "0.1.0"
+  debug: false
+  max_workers: 4
+  device: "auto"  # auto, cpu, cuda
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: null
+  console_output: true
+
+# Query Intelligence Analyzer Configuration
+query_analyzer:
+  # Complexity modeling weights: C(q) = α·L(q) + β·S(q) + γ·E(q) + δ·D(q)
+  complexity_weights:
+    alpha: 0.3    # Lexical complexity weight
+    beta: 0.25    # Syntactic complexity weight  
+    gamma: 0.25   # Entity complexity weight
+    delta: 0.2    # Domain complexity weight
+  
+  # Classification settings
+  classification_threshold: 0.7
+  feature_dim: 768
+  use_cache: true
+  cache_size: 1000
+  
+  # NLP models
+  nlp_model: "en_core_web_sm"  # spaCy model
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  
+  # Query preprocessing
+  preprocessing:
+    lowercase: true
+    remove_stopwords: false
+    lemmatization: true
+    min_length: 3
+    max_length: 1000
+
+# Dynamic Weight Controller Configuration
+weight_controller:
+  # Learning parameters
+  learning_rate: 0.001
+  regularization: 0.01
+  
+  # Weight constraints
+  min_weight: 0.01
+  max_weight: 0.98
+  
+  # Confidence settings
+  confidence_threshold: 0.8
+  
+  # Neural network architecture
+  hidden_layers: [256, 128, 64]
+  activation: "relu"
+  dropout: 0.1
+  
+  # Training settings
+  batch_size: 32
+  epochs: 100
+  early_stopping_patience: 10
+
+# Intelligent Fusion Engine Configuration
+fusion_engine:
+  # Fusion method
+  fusion_method: "intelligent_weighted"  # Options: simple_weighted, intelligent_weighted, learned_fusion
+  
+  # Fusion parameters
+  diversity_lambda: 0.1    # Diversity bonus weight λ
+  quality_mu: 0.2          # Quality bonus weight μ
+  
+  # Result processing
+  max_results: 20
+  deduplication_threshold: 0.9
+  min_score: 0.1
+  
+  # Quality assessment
+  quality_factors:
+    relevance_weight: 0.4
+    freshness_weight: 0.2
+    authority_weight: 0.2
+    completeness_weight: 0.2
+
+# Decision Explainer Configuration
+explainer:
+  explanation_level: "detailed"  # Options: basic, detailed, comprehensive
+  include_confidence: true
+  max_explanation_length: 500
+  language: "zh"  # zh, en
+  
+  # Explanation components
+  components:
+    query_analysis: true
+    weight_allocation: true
+    retrieval_process: true
+    answer_source: true
+    confidence_assessment: true
+  
+  # Templates
+  templates:
+    query_complexity: "查询复杂度: {level} ({score:.2f}/5.0)"
+    weight_distribution: "主要使用{primary_method} ({weight:.1%})"
+    strategy_selection: "检索策略: {strategy} (置信度: {confidence:.2f})"
+
+# Retriever Configurations
+retrievers:
+  # Dense Retriever (Semantic Search)
+  dense:
+    model_name: "text-embedding-ada-002"  # OpenAI embedding model
+    # model_name: "sentence-transformers/all-MiniLM-L6-v2"  # Alternative
+    max_docs: 100
+    similarity_threshold: 0.7
+    similarity_metric: "cosine"  # cosine, dot_product, euclidean
+    
+    # Vector database settings
+    vector_db:
+      type: "faiss"  # faiss, pinecone, weaviate
+      index_type: "IVF"
+      nlist: 100
+      nprobe: 10
+    
+    # Embedding settings
+    embedding:
+      dimension: 1536  # OpenAI ada-002 dimension
+      batch_size: 100
+      normalize: true
+  
+  # Sparse Retriever (Keyword Search)
+  sparse:
+    algorithm: "bm25"  # bm25, tf_idf
+    k1: 1.2
+    b: 0.75
+    max_docs: 100
+    
+    # Preprocessing
+    preprocessing:
+      stemming: true
+      remove_stopwords: true
+      min_term_freq: 1
+      max_term_freq: 0.8
+    
+    # Index settings
+    index:
+      type: "inverted"
+      compression: true
+      cache_size: 10000
+  
+  # Hybrid Retriever (Pre-configured Blend)
+  hybrid:
+    dense_weight: 0.6
+    sparse_weight: 0.4
+    max_docs: 100
+    
+    # Fusion method for hybrid
+    fusion_method: "rrf"  # rrf (reciprocal rank fusion), linear, harmonic
+    rrf_k: 60
+
+# General Retrieval Settings
+retrieval:
+  max_docs: 20
+  min_score: 0.1
+  timeout: 30.0
+  
+  # Parallel processing
+  parallel_retrieval: true
+  max_concurrent: 3
+  
+  # Caching
+  cache_enabled: true
+  cache_ttl: 3600  # seconds
+  cache_size: 1000
+
+# Answer Generation Settings
+generation:
+  model_name: "gpt-3.5-turbo"
+  max_tokens: 1000
+  temperature: 0.7
+  timeout: 30.0
+  
+  # Prompt settings
+  system_prompt: |
+    You are a helpful assistant that provides accurate and comprehensive answers 
+    based on the given context documents. Always cite your sources and explain 
+    your reasoning clearly.
+  
+  # Generation parameters
+  top_p: 0.9
+  frequency_penalty: 0.0
+  presence_penalty: 0.0
+  
+  # Context management
+  max_context_length: 4000
+  context_overlap: 200
+
+# Evaluation Settings
+evaluation:
+  metrics: ["mrr", "ndcg", "recall", "precision", "f1"]
+  k_values: [1, 5, 10, 20]
+  save_results: true
+  
+  # Benchmark datasets
+  datasets:
+    - name: "ms_marco"
+      path: "data/ms_marco"
+    - name: "natural_questions"
+      path: "data/natural_questions"
+    - name: "beir"
+      path: "data/beir"
+  
+  # Evaluation parameters
+  significance_test: true
+  confidence_level: 0.95
+  bootstrap_samples: 1000
+
+# Experiment Settings
+experiments:
+  output_dir: "experiments/results"
+  log_dir: "experiments/logs"
+  save_intermediate: true
+  
+  # Reproducibility
+  random_seed: 42
+  deterministic: true
+  
+  # Resource limits
+  max_memory_gb: 16
+  max_time_hours: 24
+
+# Data Paths
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  embeddings_dir: "data/embeddings"
+  index_dir: "data/indices"
+  
+  # Data processing
+  preprocessing:
+    chunk_size: 512
+    chunk_overlap: 50
+    min_chunk_length: 100
+    max_chunk_length: 1000
+
+# API Settings (if using external services)
+api:
+  openai:
+    api_key: null  # Set via environment variable OPENAI_API_KEY
+    base_url: "https://api.openai.com/v1"
+    timeout: 30
+    max_retries: 3
+  
+  # Other API configurations can be added here
+
+# Performance Monitoring
+monitoring:
+  enabled: true
+  metrics_interval: 60  # seconds
+  
+  # Metrics to track
+  track_metrics:
+    - "query_processing_time"
+    - "retrieval_latency"
+    - "generation_latency"
+    - "memory_usage"
+    - "cache_hit_rate"
+  
+  # Alerting thresholds
+  thresholds:
+    max_processing_time: 10.0  # seconds
+    max_memory_usage: 8.0      # GB
+    min_cache_hit_rate: 0.7    # 70%
