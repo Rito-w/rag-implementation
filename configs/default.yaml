@@ -111,8 +111,8 @@ explainer:
 retrievers:
   # Dense Retriever (Semantic Search)
   dense:
-    model_name: "text-embedding-ada-002"  # OpenAI embedding model
-    # model_name: "sentence-transformers/all-MiniLM-L6-v2"  # Alternative
+    model_name: "sentence-transformers/all-MiniLM-L6-v2"  # Free alternative
+    # model_name: "text-embedding-ada-002"  # OpenAI embedding model (requires API key)
     max_docs: 100
     similarity_threshold: 0.7
     similarity_metric: "cosine"  # cosine, dot_product, euclidean
@@ -120,9 +120,9 @@ retrievers:
     # Vector database settings
     vector_db:
       type: "faiss"  # faiss, pinecone, weaviate
-      index_type: "IVF"
-      nlist: 100
-      nprobe: 10
+      index_type: "Flat"  # Use Flat for small datasets, IVF for large
+      nlist: 10  # Reduced for small datasets
+      nprobe: 5
     
     # Embedding settings
     embedding:

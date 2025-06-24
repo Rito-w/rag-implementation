@@ -1,0 +1,797 @@
+{
+  "experiment_id": "exp_20250625_011934_85826838",
+  "start_time": "2025-06-25T01:19:34.324827",
+  "config": {
+    "datasets": [
+      "samples",
+      "squad",
+      "synthetic"
+    ],
+    "systems": [
+      "intelligent_rag"
+    ],
+    "metrics": [
+      "retrieval_quality",
+      "answer_quality",
+      "efficiency"
+    ],
+    "sample_size": 50,
+    "repetitions": 1,
+    "timeout": 60
+  },
+  "results": {
+    "samples": {
+      "intelligent_rag": {
+        "system_name": "intelligent_rag",
+        "total_queries": 5,
+        "successful_queries": 0,
+        "query_results": [
+          {
+            "query_id": "1",
+            "query_text": "What is machine learning?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "2",
+            "query_text": "How do neural networks work?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "3",
+            "query_text": "Compare supervised and unsupervised learning",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "4",
+            "query_text": "What are the applications of deep learning?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "5",
+            "query_text": "Explain the transformer architecture",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          }
+        ],
+        "system_stats": {
+          "error": "No successful queries"
+        }
+      }
+    },
+    "squad": {
+      "intelligent_rag": {
+        "system_name": "intelligent_rag",
+        "total_queries": 50,
+        "successful_queries": 0,
+        "query_results": [
+          {
+            "query_id": "squad_0",
+            "query_text": "To whom did the Virgin Mary allegedly appear in 1858 in Lourdes France?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_1",
+            "query_text": "What is in front of the Notre Dame Main Building?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_2",
+            "query_text": "The Basilica of the Sacred heart at Notre Dame is beside to which structure?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_3",
+            "query_text": "What is the Grotto at Notre Dame?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_4",
+            "query_text": "What sits on top of the Main Building at Notre Dame?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_5",
+            "query_text": "When did the Scholastic Magazine of Notre dame begin publishing?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_6",
+            "query_text": "How often is Notre Dame's the Juggler published?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_7",
+            "query_text": "What is the daily student paper at Notre Dame called?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_8",
+            "query_text": "How many student news papers are found at Notre Dame?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_9",
+            "query_text": "In what year did the student paper Common Sense begin publication at Notre Dame?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_10",
+            "query_text": "Where is the headquarters of the Congregation of the Holy Cross?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_11",
+            "query_text": "What is the primary seminary of the Congregation of the Holy Cross?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_12",
+            "query_text": "What is the oldest structure at Notre Dame?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_13",
+            "query_text": "What individuals live at Fatima House at Notre Dame?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_14",
+            "query_text": "Which prize did Frederick Buechner create?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_15",
+            "query_text": "How many BS level degrees are offered in the College of Engineering at Notre Dame?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_16",
+            "query_text": "In what year was the College of Engineering at Notre Dame formed?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_17",
+            "query_text": "Before the creation of the College of Engineering similar studies were carried out at which Notre Dame college?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_18",
+            "query_text": "How many departments are within the Stinson-Remick Hall of Engineering?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_19",
+            "query_text": "The College of Science began to offer civil engineering courses beginning at what time at Notre Dame?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_20",
+            "query_text": "What entity provides help with the management of time for new students at Notre Dame?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_21",
+            "query_text": "How many colleges for undergraduates are at Notre Dame?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_22",
+            "query_text": "What was created at Notre Dame in 1962 to assist first year students?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_23",
+            "query_text": "Which organization declared the First Year of Studies program at Notre Dame \"outstanding?\"",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_24",
+            "query_text": "The granting of Doctorate degrees first occurred in what year at Notre Dame?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_25",
+            "query_text": "What type of degree is an M.Div.?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_26",
+            "query_text": "Which program at Notre Dame offers a Master of Education degree?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_27",
+            "query_text": "In what year was a Master of Arts course first offered at Notre Dame?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_28",
+            "query_text": "Which department at Notre Dame is the only one to not offer a PhD program?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_29",
+            "query_text": "What institute at Notre Dame studies  the reasons for violent conflict?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_30",
+            "query_text": "What is the title of Notre Dame's Theodore Hesburgh?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_31",
+            "query_text": "In what year was the Joan B. Kroc Institute for International Peace Studies founded?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_32",
+            "query_text": "To whom was John B. Kroc married?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_33",
+            "query_text": "What company did Ray Kroc own?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_34",
+            "query_text": "How many stories tall is the main library at Notre Dame?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_35",
+            "query_text": "What is the name of the main library at Notre Dame?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_36",
+            "query_text": "In what year was the Theodore M. Hesburgh Library at Notre Dame finished?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_37",
+            "query_text": "Which artist created the mural on the Theodore M. Hesburgh Library?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_38",
+            "query_text": "What is a common name to reference the mural created by Millard Sheets at Notre Dame?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_39",
+            "query_text": "How many incoming students did Notre Dame admit in fall 2015?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_40",
+            "query_text": "What percentage of students were admitted to Notre Dame in fall 2015?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_41",
+            "query_text": "Where does Notre Dame rank in terms of academic profile among research universities in the US?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_42",
+            "query_text": "What percentage of students at Notre Dame participated in the Early Action program?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_43",
+            "query_text": "How many miles does the average student at Notre Dame travel to study there?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_44",
+            "query_text": "Where did U.S. News & World Report rank Notre Dame in its 2015-2016 university rankings?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_45",
+            "query_text": "Forbes.com placed Notre Dame at what position compared to other US research universities?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_46",
+            "query_text": "The undergrad school at the Mendoza College of Business was ranked where according to BusinessWeek?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_47",
+            "query_text": "In 2014 what entity named Notre Dame 10th best of all American universities?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_48",
+            "query_text": "What percentage of Notre Dame students decide to study abroad?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "squad_49",
+            "query_text": "What person was the Director of the Science Museum at Notre Dame in the late 19th century?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          }
+        ],
+        "system_stats": {
+          "error": "No successful queries"
+        }
+      }
+    },
+    "synthetic": {
+      "intelligent_rag": {
+        "system_name": "intelligent_rag",
+        "total_queries": 50,
+        "successful_queries": 0,
+        "query_results": [
+          {
+            "query_id": "synthetic_0",
+            "query_text": "What is machine learning?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_1",
+            "query_text": "How does deep learning work?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_2",
+            "query_text": "What are the benefits of neural networks?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_3",
+            "query_text": "Compare artificial intelligence with alternatives",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_4",
+            "query_text": "Explain the concept of natural language processing",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_5",
+            "query_text": "What are the applications of computer vision?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_6",
+            "query_text": "How to implement reinforcement learning?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_7",
+            "query_text": "What are the challenges in transformer models?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_8",
+            "query_text": "Future trends in attention mechanism",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_9",
+            "query_text": "Best practices for BERT",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_10",
+            "query_text": "What is GPT?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_11",
+            "query_text": "How does retrieval systems work?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_12",
+            "query_text": "What are the benefits of information retrieval?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_13",
+            "query_text": "Compare question answering with alternatives",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_14",
+            "query_text": "Explain the concept of text summarization",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_15",
+            "query_text": "What are the applications of sentiment analysis?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_16",
+            "query_text": "How to implement named entity recognition?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_17",
+            "query_text": "What are the challenges in part-of-speech tagging?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_18",
+            "query_text": "Future trends in semantic search",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_19",
+            "query_text": "Best practices for vector databases",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_20",
+            "query_text": "What is embedding models?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_21",
+            "query_text": "How does fine-tuning work?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_22",
+            "query_text": "What are the benefits of transfer learning?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_23",
+            "query_text": "Compare few-shot learning with alternatives",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_24",
+            "query_text": "Explain the concept of zero-shot learning",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_25",
+            "query_text": "What are the applications of meta-learning?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_26",
+            "query_text": "How to implement machine learning?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_27",
+            "query_text": "What are the challenges in deep learning?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_28",
+            "query_text": "Future trends in neural networks",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_29",
+            "query_text": "Best practices for artificial intelligence",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_30",
+            "query_text": "What is natural language processing?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_31",
+            "query_text": "How does computer vision work?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_32",
+            "query_text": "What are the benefits of reinforcement learning?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_33",
+            "query_text": "Compare transformer models with alternatives",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_34",
+            "query_text": "Explain the concept of attention mechanism",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_35",
+            "query_text": "What are the applications of BERT?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_36",
+            "query_text": "How to implement GPT?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_37",
+            "query_text": "What are the challenges in retrieval systems?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_38",
+            "query_text": "Future trends in information retrieval",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_39",
+            "query_text": "Best practices for question answering",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_40",
+            "query_text": "What is text summarization?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_41",
+            "query_text": "How does sentiment analysis work?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_42",
+            "query_text": "What are the benefits of named entity recognition?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_43",
+            "query_text": "Compare part-of-speech tagging with alternatives",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_44",
+            "query_text": "Explain the concept of semantic search",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_45",
+            "query_text": "What are the applications of vector databases?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_46",
+            "query_text": "How to implement embedding models?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_47",
+            "query_text": "What are the challenges in fine-tuning?",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_48",
+            "query_text": "Future trends in transfer learning",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "synthetic_49",
+            "query_text": "Best practices for few-shot learning",
+            "error": "sentence-transformers/text-embedding-ada-002 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`",
+            "processing_time": 0,
+            "confidence": 0
+          }
+        ],
+        "system_stats": {
+          "error": "No successful queries"
+        }
+      }
+    }
+  },
+  "end_time": "2025-06-25T01:20:33.101294",
+  "duration": 58.776467
+}

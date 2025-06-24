@@ -1,0 +1,4177 @@
+{
+  "experiment_id": "exp_20250625_012924_d8f0a02d",
+  "start_time": "2025-06-25T01:29:24.041600",
+  "config": {
+    "datasets": [
+      "samples",
+      "squad",
+      "synthetic"
+    ],
+    "systems": [
+      "intelligent_rag"
+    ],
+    "metrics": [
+      "retrieval_quality",
+      "answer_quality",
+      "efficiency"
+    ],
+    "sample_size": 100,
+    "repetitions": 1,
+    "timeout": 60
+  },
+  "results": {
+    "samples": {
+      "intelligent_rag": {
+        "system_name": "intelligent_rag",
+        "total_queries": 5,
+        "successful_queries": 5,
+        "query_results": [
+          {
+            "query_id": "1",
+            "query_text": "What is machine learning?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.511682030972728,
+            "processing_time": 6.623487949371338,
+            "retrieval_results": 4,
+            "query_analysis": {
+              "complexity": 1.5868566176470589,
+              "type": "local_factual",
+              "confidence": 0.5704227941176471
+            },
+            "weight_allocation": {
+              "dense": 0.2095929421530154,
+              "sparse": 0.5846736550356268,
+              "hybrid": 0.2057334028113578,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "2",
+            "query_text": "How do neural networks work?",
+            "query_type": "technical",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.4249854780153148,
+            "processing_time": 0.03923368453979492,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.3851307189542483,
+              "type": "local_factual",
+              "confidence": 0.5462156862745098
+            },
+            "weight_allocation": {
+              "dense": 0.12834354741231202,
+              "sparse": 0.6947407334247341,
+              "hybrid": 0.17691571916295393,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "3",
+            "query_text": "Compare supervised and unsupervised learning",
+            "query_type": "comparison",
+            "answer": "根据相关文档1：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...\n\n根据相关文档2：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.6055308200177116,
+            "processing_time": 0.026558876037597656,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.470735294117647,
+              "type": "local_factual",
+              "confidence": 0.6164882352941177
+            },
+            "weight_allocation": {
+              "dense": 0.13002167494835776,
+              "sparse": 0.6944764825156643,
+              "hybrid": 0.1755018425359778,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "4",
+            "query_text": "What are the applications of deep learning?",
+            "query_type": "application",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.5625044519760716,
+            "processing_time": 0.03146195411682129,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.7721796218487396,
+              "type": "local_factual",
+              "confidence": 0.6526615546218487
+            },
+            "weight_allocation": {
+              "dense": 0.2062101575661712,
+              "sparse": 0.6001329898913464,
+              "hybrid": 0.19365685254248244,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "5",
+            "query_text": "Explain the transformer architecture",
+            "query_type": "detailed",
+            "answer": "根据相关文档1：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。",
+            "confidence": 0.5383329413641198,
+            "processing_time": 0.0243990421295166,
+            "retrieval_results": 4,
+            "query_analysis": {
+              "complexity": 1.5761764705882353,
+              "type": "local_factual",
+              "confidence": 0.5691411764705883
+            },
+            "weight_allocation": {
+              "dense": 0.21088025930947796,
+              "sparse": 0.5830742140569924,
+              "hybrid": 0.20604552663352946,
+              "strategy": "precision_focused"
+            }
+          }
+        ],
+        "system_stats": {
+          "avg_confidence": 0.5286071444691892,
+          "avg_processing_time": 1.3490283012390136,
+          "avg_complexity": 1.5582157446311857,
+          "total_processing_time": 6.745141506195068,
+          "throughput": 0.7412742928236206,
+          "success_rate": 1.0
+        }
+      }
+    },
+    "squad": {
+      "intelligent_rag": {
+        "system_name": "intelligent_rag",
+        "total_queries": 100,
+        "successful_queries": 100,
+        "query_results": [
+          {
+            "query_id": "squad_0",
+            "query_text": "To whom did the Virgin Mary allegedly appear in 1858 in Lourdes France?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 7.096776008605957,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.983392722473605,
+              "type": "local_factual",
+              "confidence": 0.7380071266968327
+            },
+            "weight_allocation": {
+              "dense": 0.23908322334082172,
+              "sparse": 0.5706361899674212,
+              "hybrid": 0.19028058669175704,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_1",
+            "query_text": "What is in front of the Notre Dame Main Building?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.03542590141296387,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.6414705882352942,
+              "type": "local_factual",
+              "confidence": 0.6969764705882353
+            },
+            "weight_allocation": {
+              "dense": 0.25895848069643285,
+              "sparse": 0.5521199082491022,
+              "hybrid": 0.188921611054465,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_2",
+            "query_text": "The Basilica of the Sacred heart at Notre Dame is beside to which structure?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6142394118412824,
+            "processing_time": 0.028442859649658203,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.9171699929971988,
+              "type": "local_factual",
+              "confidence": 0.7300603991596639
+            },
+            "weight_allocation": {
+              "dense": 0.24235122115993266,
+              "sparse": 0.5659841489817468,
+              "hybrid": 0.19166462985832053,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_3",
+            "query_text": "What is the Grotto at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.027585744857788086,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.7385486694677872,
+              "type": "local_factual",
+              "confidence": 0.6486258403361345
+            },
+            "weight_allocation": {
+              "dense": 0.2606780007874463,
+              "sparse": 0.5552355721703393,
+              "hybrid": 0.1840864270422143,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_4",
+            "query_text": "What sits on top of the Main Building at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.03320193290710449,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.040372103386809,
+              "type": "local_factual",
+              "confidence": 0.7448446524064171
+            },
+            "weight_allocation": {
+              "dense": 0.2363549265245878,
+              "sparse": 0.5076090072008862,
+              "hybrid": 0.25603606627452596,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_5",
+            "query_text": "When did the Scholastic Magazine of Notre dame begin publishing?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.028064966201782227,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.017175245098039,
+              "type": "local_factual",
+              "confidence": 0.7420610294117647
+            },
+            "weight_allocation": {
+              "dense": 0.2239615519321951,
+              "sparse": 0.51608501445745,
+              "hybrid": 0.2599534336103549,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_6",
+            "query_text": "How often is Notre Dame's the Juggler published?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.036576032638549805,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.6960539215686274,
+              "type": "local_factual",
+              "confidence": 0.7035264705882354
+            },
+            "weight_allocation": {
+              "dense": 0.25301775437681345,
+              "sparse": 0.56038786630276,
+              "hybrid": 0.1865943793204265,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_7",
+            "query_text": "What is the daily student paper at Notre Dame called?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6513822508636535,
+            "processing_time": 0.024618148803710938,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.040612745098039,
+              "type": "local_factual",
+              "confidence": 0.7448735294117648
+            },
+            "weight_allocation": {
+              "dense": 0.23259368964899882,
+              "sparse": 0.5126436347941816,
+              "hybrid": 0.2547626755568196,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_8",
+            "query_text": "How many student news papers are found at Notre Dame?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.657482513038121,
+            "processing_time": 0.027780771255493164,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.5885539215686275,
+              "type": "local_factual",
+              "confidence": 0.6906264705882352
+            },
+            "weight_allocation": {
+              "dense": 0.24544099773047717,
+              "sparse": 0.5650544160437481,
+              "hybrid": 0.18950458622577462,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_9",
+            "query_text": "In what year did the student paper Common Sense begin publication at Notre Dame?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.6540037096724571,
+            "processing_time": 0.031142234802246094,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.9984199929971989,
+              "type": "local_factual",
+              "confidence": 0.7398103991596638
+            },
+            "weight_allocation": {
+              "dense": 0.23752370678660628,
+              "sparse": 0.5709003004185772,
+              "hybrid": 0.1915759927948166,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_10",
+            "query_text": "Where is the headquarters of the Congregation of the Holy Cross?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.025892972946166992,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.5849799465240642,
+              "type": "local_factual",
+              "confidence": 0.6901975935828877
+            },
+            "weight_allocation": {
+              "dense": 0.25442268138428664,
+              "sparse": 0.5547459590129414,
+              "hybrid": 0.1908313596027719,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_11",
+            "query_text": "What is the primary seminary of the Congregation of the Holy Cross?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.03052520751953125,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.6152205882352941,
+              "type": "local_factual",
+              "confidence": 0.6938264705882353
+            },
+            "weight_allocation": {
+              "dense": 0.2528954661251154,
+              "sparse": 0.556211191459257,
+              "hybrid": 0.1908933424156275,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_12",
+            "query_text": "What is the oldest structure at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02800726890563965,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.8526164215686272,
+              "type": "local_factual",
+              "confidence": 0.7223139705882353
+            },
+            "weight_allocation": {
+              "dense": 0.25481040700845453,
+              "sparse": 0.5589156247430178,
+              "hybrid": 0.1862739682485278,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_13",
+            "query_text": "What individuals live at Fatima House at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.029663801193237305,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.8490196078431373,
+              "type": "local_factual",
+              "confidence": 0.7218823529411764
+            },
+            "weight_allocation": {
+              "dense": 0.24558456667911768,
+              "sparse": 0.5669345915561084,
+              "hybrid": 0.1874808417647739,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_14",
+            "query_text": "Which prize did Frederick Buechner create?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：向量数据库是专门用于存储和检索高维向量的数据库系统。它们通过计算向量之间的相似度来快速找到最相关的数据，广泛应用于推荐系统和语义搜索。",
+            "confidence": 0.6159439651575552,
+            "processing_time": 0.024057865142822266,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.4764154411764707,
+              "type": "local_factual",
+              "confidence": 0.6771698529411765
+            },
+            "weight_allocation": {
+              "dense": 0.15815467784511986,
+              "sparse": 0.6636511093559225,
+              "hybrid": 0.17819421279895759,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_15",
+            "query_text": "How many BS level degrees are offered in the College of Engineering at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.030877113342285156,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.9668627450980392,
+              "type": "local_factual",
+              "confidence": 0.7360235294117647
+            },
+            "weight_allocation": {
+              "dense": 0.2517876808067178,
+              "sparse": 0.5584212342903501,
+              "hybrid": 0.18979108490293198,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_16",
+            "query_text": "In what year was the College of Engineering at Notre Dame formed?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02756190299987793,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.1874325980392157,
+              "type": "local_factual",
+              "confidence": 0.7624919117647059
+            },
+            "weight_allocation": {
+              "dense": 0.23485976965604916,
+              "sparse": 0.5094142846564661,
+              "hybrid": 0.2557259456874848,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_17",
+            "query_text": "Before the creation of the College of Engineering similar studies were carried out at which Notre Dame college?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6513216802100893,
+            "processing_time": 0.030786991119384766,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.233713235294118,
+              "type": "local_factual",
+              "confidence": 0.7680455882352941
+            },
+            "weight_allocation": {
+              "dense": 0.22318598251916272,
+              "sparse": 0.5137812519014199,
+              "hybrid": 0.2630327655794175,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_18",
+            "query_text": "How many departments are within the Stinson-Remick Hall of Engineering?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.0272979736328125,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.8211825980392153,
+              "type": "local_factual",
+              "confidence": 0.7185419117647058
+            },
+            "weight_allocation": {
+              "dense": 0.244250285722633,
+              "sparse": 0.5652280950895457,
+              "hybrid": 0.19052161918782123,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_19",
+            "query_text": "The College of Science began to offer civil engineering courses beginning at what time at Notre Dame?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6399452519488436,
+            "processing_time": 0.030443668365478516,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.2318259803921565,
+              "type": "local_factual",
+              "confidence": 0.7678191176470588
+            },
+            "weight_allocation": {
+              "dense": 0.22783350546472794,
+              "sparse": 0.510534835912049,
+              "hybrid": 0.26163165862322313,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_20",
+            "query_text": "What entity provides help with the management of time for new students at Notre Dame?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6479940071984696,
+            "processing_time": 0.02937602996826172,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.0371200980392152,
+              "type": "local_factual",
+              "confidence": 0.7444544117647058
+            },
+            "weight_allocation": {
+              "dense": 0.2226539544985406,
+              "sparse": 0.5150951302130006,
+              "hybrid": 0.2622509152884587,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_21",
+            "query_text": "How many colleges for undergraduates are at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.026582002639770508,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.6733700980392157,
+              "type": "local_factual",
+              "confidence": 0.7008044117647059
+            },
+            "weight_allocation": {
+              "dense": 0.2442571558348113,
+              "sparse": 0.5664245885214247,
+              "hybrid": 0.18931825564376387,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_22",
+            "query_text": "What was created at Notre Dame in 1962 to assist first year students?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6399031376837532,
+            "processing_time": 0.03198409080505371,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.198296568627451,
+              "type": "local_factual",
+              "confidence": 0.763795588235294
+            },
+            "weight_allocation": {
+              "dense": 0.2233984033951931,
+              "sparse": 0.5191177714458453,
+              "hybrid": 0.25748382515896157,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_23",
+            "query_text": "Which organization declared the First Year of Studies program at Notre Dame \"outstanding?\"",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6461139255577524,
+            "processing_time": 0.026700973510742188,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.258322021116139,
+              "type": "local_factual",
+              "confidence": 0.7709986425339366
+            },
+            "weight_allocation": {
+              "dense": 0.22524364383865478,
+              "sparse": 0.5147894910273785,
+              "hybrid": 0.2599668651339668,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_24",
+            "query_text": "The granting of Doctorate degrees first occurred in what year at Notre Dame?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6130894931573725,
+            "processing_time": 0.028627872467041016,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.277552790346908,
+              "type": "local_factual",
+              "confidence": 0.7733063348416289
+            },
+            "weight_allocation": {
+              "dense": 0.22508966684481801,
+              "sparse": 0.5175988159038059,
+              "hybrid": 0.25731151725137613,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_25",
+            "query_text": "What type of degree is an M.Div.?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.5985024796853892,
+            "processing_time": 0.024147987365722656,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.3135976890756305,
+              "type": "local_factual",
+              "confidence": 0.5976317226890756
+            },
+            "weight_allocation": {
+              "dense": 0.16755113008898873,
+              "sparse": 0.6564359921637098,
+              "hybrid": 0.1760128777473015,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_26",
+            "query_text": "Which program at Notre Dame offers a Master of Education degree?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.027816057205200195,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.8598908199643491,
+              "type": "local_factual",
+              "confidence": 0.7231868983957219
+            },
+            "weight_allocation": {
+              "dense": 0.2456004153944339,
+              "sparse": 0.5645956301475485,
+              "hybrid": 0.18980395445801762,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_27",
+            "query_text": "In what year was a Master of Arts course first offered at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.0300140380859375,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.3098039215686277,
+              "type": "local_factual",
+              "confidence": 0.7771764705882354
+            },
+            "weight_allocation": {
+              "dense": 0.23389519982550763,
+              "sparse": 0.5108041757219461,
+              "hybrid": 0.2553006244525463,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_28",
+            "query_text": "Which department at Notre Dame is the only one to not offer a PhD program?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02856612205505371,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.106421568627451,
+              "type": "local_factual",
+              "confidence": 0.7527705882352941
+            },
+            "weight_allocation": {
+              "dense": 0.22170159056116592,
+              "sparse": 0.5182084620838135,
+              "hybrid": 0.26008994735502067,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_29",
+            "query_text": "What institute at Notre Dame studies  the reasons for violent conflict?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.632822768338198,
+            "processing_time": 0.0265350341796875,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.9636675579322636,
+              "type": "local_factual",
+              "confidence": 0.7356401069518717
+            },
+            "weight_allocation": {
+              "dense": 0.24317498570039206,
+              "sparse": 0.5666909187582512,
+              "hybrid": 0.19013409554135685,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_30",
+            "query_text": "What is the title of Notre Dame's Theodore Hesburgh?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.6539704802669595,
+            "processing_time": 0.025617122650146484,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.8950367647058821,
+              "type": "local_factual",
+              "confidence": 0.7274044117647058
+            },
+            "weight_allocation": {
+              "dense": 0.25041931985616916,
+              "sparse": 0.5619637683911325,
+              "hybrid": 0.18761691175269823,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_31",
+            "query_text": "In what year was the Joan B. Kroc Institute for International Peace Studies founded?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.63985198181615,
+            "processing_time": 0.02862095832824707,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.1278842787114844,
+              "type": "local_factual",
+              "confidence": 0.755346113445378
+            },
+            "weight_allocation": {
+              "dense": 0.21951561456862304,
+              "sparse": 0.5192280794194694,
+              "hybrid": 0.2612563060119076,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_32",
+            "query_text": "To whom was John B. Kroc married?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02279806137084961,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.7075612745098037,
+              "type": "local_factual",
+              "confidence": 0.6449073529411764
+            },
+            "weight_allocation": {
+              "dense": 0.25494917697242625,
+              "sparse": 0.5612688308234185,
+              "hybrid": 0.18378199220415528,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_33",
+            "query_text": "What company did Ray Kroc own?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.026140928268432617,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.2356066176470586,
+              "type": "local_factual",
+              "confidence": 0.5882727941176471
+            },
+            "weight_allocation": {
+              "dense": 0.16306669646122007,
+              "sparse": 0.6611356836573251,
+              "hybrid": 0.17579761988145493,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_34",
+            "query_text": "How many stories tall is the main library at Notre Dame?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6608133528542081,
+            "processing_time": 0.027119874954223633,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.6558266488413544,
+              "type": "local_factual",
+              "confidence": 0.6986991978609625
+            },
+            "weight_allocation": {
+              "dense": 0.24918514032283215,
+              "sparse": 0.5621608255001168,
+              "hybrid": 0.18865403417705098,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_35",
+            "query_text": "What is the name of the main library at Notre Dame?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6372760336815547,
+            "processing_time": 0.027595996856689453,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.8986107397504457,
+              "type": "local_factual",
+              "confidence": 0.7278332887700534
+            },
+            "weight_allocation": {
+              "dense": 0.25893237194966895,
+              "sparse": 0.5542494158218512,
+              "hybrid": 0.18681821222847975,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_36",
+            "query_text": "In what year was the Theodore M. Hesburgh Library at Notre Dame finished?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6519652628921596,
+            "processing_time": 0.028456926345825195,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.1417354826546005,
+              "type": "local_factual",
+              "confidence": 0.757008257918552
+            },
+            "weight_allocation": {
+              "dense": 0.2256095655675258,
+              "sparse": 0.5159520493752857,
+              "hybrid": 0.2584383850571885,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_37",
+            "query_text": "Which artist created the mural on the Theodore M. Hesburgh Library?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：向量数据库是专门用于存储和检索高维向量的数据库系统。它们通过计算向量之间的相似度来快速找到最相关的数据，广泛应用于推荐系统和语义搜索。",
+            "confidence": 0.6118617544370774,
+            "processing_time": 0.027665138244628906,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.6291143048128343,
+              "type": "local_factual",
+              "confidence": 0.6954937165775401
+            },
+            "weight_allocation": {
+              "dense": 0.24850659698815988,
+              "sparse": 0.5603648507189608,
+              "hybrid": 0.19112855229287923,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_38",
+            "query_text": "What is a common name to reference the mural created by Millard Sheets at Notre Dame?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.6371464610203952,
+            "processing_time": 0.03206992149353027,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.112437193627451,
+              "type": "local_factual",
+              "confidence": 0.7534924632352941
+            },
+            "weight_allocation": {
+              "dense": 0.2257806818834972,
+              "sparse": 0.5127352153163119,
+              "hybrid": 0.2614841028001908,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_39",
+            "query_text": "How many incoming students did Notre Dame admit in fall 2015?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.6568969399670126,
+            "processing_time": 0.029565095901489258,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.8923741087344028,
+              "type": "local_factual",
+              "confidence": 0.7270848930481284
+            },
+            "weight_allocation": {
+              "dense": 0.2472773655710183,
+              "sparse": 0.564963678152487,
+              "hybrid": 0.18775895627649472,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_40",
+            "query_text": "What percentage of students were admitted to Notre Dame in fall 2015?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.6055731104148773,
+            "processing_time": 0.03089427947998047,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.0376164215686274,
+              "type": "local_factual",
+              "confidence": 0.7445139705882353
+            },
+            "weight_allocation": {
+              "dense": 0.21875181131570717,
+              "sparse": 0.5212346952309013,
+              "hybrid": 0.2600134934533916,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_41",
+            "query_text": "Where does Notre Dame rank in terms of academic profile among research universities in the US?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6486520156424735,
+            "processing_time": 0.03092789649963379,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.4071867340686275,
+              "type": "local_factual",
+              "confidence": 0.7888624080882354
+            },
+            "weight_allocation": {
+              "dense": 0.23143092653156888,
+              "sparse": 0.5082265644860609,
+              "hybrid": 0.2603425089823704,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_42",
+            "query_text": "What percentage of students at Notre Dame participated in the Early Action program?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.027566194534301758,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.1441393288084463,
+              "type": "local_factual",
+              "confidence": 0.7572967194570135
+            },
+            "weight_allocation": {
+              "dense": 0.22627594037057164,
+              "sparse": 0.5127728069913866,
+              "hybrid": 0.26095125263804175,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_43",
+            "query_text": "How many miles does the average student at Notre Dame travel to study there?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.028387784957885742,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.033346463585434,
+              "type": "local_factual",
+              "confidence": 0.744001575630252
+            },
+            "weight_allocation": {
+              "dense": 0.2244166206948786,
+              "sparse": 0.5142384945170722,
+              "hybrid": 0.26134488478804924,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_44",
+            "query_text": "Where did U.S. News & World Report rank Notre Dame in its 2015-2016 university rankings?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6434209587481451,
+            "processing_time": 0.03205609321594238,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.308291316526611,
+              "type": "local_factual",
+              "confidence": 0.7769949579831933
+            },
+            "weight_allocation": {
+              "dense": 0.21948291707238624,
+              "sparse": 0.5202425285749465,
+              "hybrid": 0.2602745543526673,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_45",
+            "query_text": "Forbes.com placed Notre Dame at what position compared to other US research universities?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.029670000076293945,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.0564225113122174,
+              "type": "local_factual",
+              "confidence": 0.746770701357466
+            },
+            "weight_allocation": {
+              "dense": 0.2235609095503628,
+              "sparse": 0.5129529309762393,
+              "hybrid": 0.2634861594733978,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_46",
+            "query_text": "The undergrad school at the Mendoza College of Business was ranked where according to BusinessWeek?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档3：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。",
+            "confidence": 0.6539580512554148,
+            "processing_time": 0.028750896453857422,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.119987745098039,
+              "type": "local_factual",
+              "confidence": 0.7543985294117647
+            },
+            "weight_allocation": {
+              "dense": 0.21964810186743436,
+              "sparse": 0.5169189221899924,
+              "hybrid": 0.2634329759425732,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_47",
+            "query_text": "In 2014 what entity named Notre Dame 10th best of all American universities?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6461789500305514,
+            "processing_time": 0.026623964309692383,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.2928242835595776,
+              "type": "local_factual",
+              "confidence": 0.7751389140271493
+            },
+            "weight_allocation": {
+              "dense": 0.22536546156170884,
+              "sparse": 0.516671586126094,
+              "hybrid": 0.2579629523121971,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_48",
+            "query_text": "What percentage of Notre Dame students decide to study abroad?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.5976279577043485,
+            "processing_time": 0.026215791702270508,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.1907414215686276,
+              "type": "local_factual",
+              "confidence": 0.7628889705882353
+            },
+            "weight_allocation": {
+              "dense": 0.22771886281393164,
+              "sparse": 0.5138516043796878,
+              "hybrid": 0.25842953280638065,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_49",
+            "query_text": "What person was the Director of the Science Museum at Notre Dame in the late 19th century?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.030035972595214844,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.1750245098039214,
+              "type": "local_factual",
+              "confidence": 0.7610029411764705
+            },
+            "weight_allocation": {
+              "dense": 0.22499387204835142,
+              "sparse": 0.5144056214444314,
+              "hybrid": 0.26060050650721717,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_50",
+            "query_text": "What was the lifespan of John Augustine Zahm?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.0258791446685791,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.8266513480392157,
+              "type": "local_factual",
+              "confidence": 0.7191981617647059
+            },
+            "weight_allocation": {
+              "dense": 0.24734298017071107,
+              "sparse": 0.5655775037015424,
+              "hybrid": 0.18707951612774656,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_51",
+            "query_text": "What program did John Augustine Zahm come to co-direct at Nore Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.028728723526000977,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.9360539215686274,
+              "type": "local_factual",
+              "confidence": 0.7323264705882353
+            },
+            "weight_allocation": {
+              "dense": 0.24447166524763891,
+              "sparse": 0.5652967785543761,
+              "hybrid": 0.19023155619798482,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_52",
+            "query_text": "What book did John Zahm write in 1896?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：向量数据库是专门用于存储和检索高维向量的数据库系统。它们通过计算向量之间的相似度来快速找到最相关的数据，广泛应用于推荐系统和语义搜索。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.5954468763476006,
+            "processing_time": 0.025120973587036133,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.7764445465686274,
+              "type": "local_factual",
+              "confidence": 0.7131733455882352
+            },
+            "weight_allocation": {
+              "dense": 0.24540106010685742,
+              "sparse": 0.5694170675507251,
+              "hybrid": 0.18518187234241743,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_53",
+            "query_text": "What professorship did Father Josh Carrier hold at Notre Dame?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.654755122765352,
+            "processing_time": 0.025249004364013672,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.8261825980392157,
+              "type": "local_factual",
+              "confidence": 0.7191419117647059
+            },
+            "weight_allocation": {
+              "dense": 0.24150837313349532,
+              "sparse": 0.567675794335877,
+              "hybrid": 0.19081583253062784,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_54",
+            "query_text": "In what year did Albert Zahm begin comparing aeronatical models at Notre Dame?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6331729112248896,
+            "processing_time": 0.027910947799682617,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.3885539215686276,
+              "type": "local_factual",
+              "confidence": 0.7866264705882353
+            },
+            "weight_allocation": {
+              "dense": 0.22059709738757888,
+              "sparse": 0.520230438424842,
+              "hybrid": 0.2591724641875791,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_55",
+            "query_text": "Which professor sent the first wireless message in the USA?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.025994062423706055,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.8046200980392157,
+              "type": "local_factual",
+              "confidence": 0.7165544117647058
+            },
+            "weight_allocation": {
+              "dense": 0.242056777942184,
+              "sparse": 0.568012191589409,
+              "hybrid": 0.1899310304684071,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_56",
+            "query_text": "In what year did Jerome Green send his first wireless message?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.027693748474121094,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.1391354723707665,
+              "type": "local_factual",
+              "confidence": 0.7566962566844919
+            },
+            "weight_allocation": {
+              "dense": 0.22105691735119115,
+              "sparse": 0.5220573750767009,
+              "hybrid": 0.256885707572108,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_57",
+            "query_text": "Which individual worked on projects at Notre Dame that eventually created neoprene?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02833700180053711,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.1235539215686274,
+              "type": "local_factual",
+              "confidence": 0.7548264705882353
+            },
+            "weight_allocation": {
+              "dense": 0.22275292648222256,
+              "sparse": 0.515691652233638,
+              "hybrid": 0.2615554212841394,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_58",
+            "query_text": "What did the brother of John Zahm construct at Notre Dame?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：向量数据库是专门用于存储和检索高维向量的数据库系统。它们通过计算向量之间的相似度来快速找到最相关的数据，广泛应用于推荐系统和语义搜索。",
+            "confidence": 0.6391013935380587,
+            "processing_time": 0.0294797420501709,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.9409402852049908,
+              "type": "local_factual",
+              "confidence": 0.732912834224599
+            },
+            "weight_allocation": {
+              "dense": 0.24279191777477044,
+              "sparse": 0.5689620996071976,
+              "hybrid": 0.188245982618032,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_59",
+            "query_text": "Work on a germ-free-life ended up in the creation of which Notre Dame institute?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.028285980224609375,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.085736169467787,
+              "type": "local_factual",
+              "confidence": 0.7502883403361345
+            },
+            "weight_allocation": {
+              "dense": 0.2276777454299539,
+              "sparse": 0.5118920239750547,
+              "hybrid": 0.26043023059499143,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_60",
+            "query_text": "Around what time did Lobund of Notre Dame become independent?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02544093132019043,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.990612745098039,
+              "type": "local_factual",
+              "confidence": 0.7388735294117648
+            },
+            "weight_allocation": {
+              "dense": 0.2515453858580502,
+              "sparse": 0.5591863753706744,
+              "hybrid": 0.18926823877127535,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_61",
+            "query_text": "In what year did Lobund at Notre Dame become an Institute?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6732936168000039,
+            "processing_time": 0.026263952255249023,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.981381461675579,
+              "type": "local_factual",
+              "confidence": 0.7377657754010695
+            },
+            "weight_allocation": {
+              "dense": 0.2481982671835576,
+              "sparse": 0.5641586892085478,
+              "hybrid": 0.18764304360789447,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_62",
+            "query_text": "The Lobund Institute was merged into the Department of Biology at Notre Dame in what year?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.03181290626525879,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.2032804840686273,
+              "type": "local_factual",
+              "confidence": 0.7643936580882353
+            },
+            "weight_allocation": {
+              "dense": 0.21890176926192942,
+              "sparse": 0.5203140113978401,
+              "hybrid": 0.26078421934023055,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_63",
+            "query_text": "When did study of a germ-free-life begin at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02445816993713379,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.0485539215686273,
+              "type": "local_factual",
+              "confidence": 0.7458264705882353
+            },
+            "weight_allocation": {
+              "dense": 0.22715114108887496,
+              "sparse": 0.5145388630401264,
+              "hybrid": 0.25830999587099873,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_64",
+            "query_text": "Gurian created what in 1939 at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.025870800018310547,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.8182643995098038,
+              "type": "local_factual",
+              "confidence": 0.7181917279411765
+            },
+            "weight_allocation": {
+              "dense": 0.24983051484934013,
+              "sparse": 0.5654844023202418,
+              "hybrid": 0.18468508283041812,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_65",
+            "query_text": "What was the Review of Politics inspired by?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.0257871150970459,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.6124586397058824,
+              "type": "local_factual",
+              "confidence": 0.6334950367647059
+            },
+            "weight_allocation": {
+              "dense": 0.2584810553777261,
+              "sparse": 0.5536670166654938,
+              "hybrid": 0.18785192795678002,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_66",
+            "query_text": "Over how many years did Gurian edit the Review of Politics at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.027539968490600586,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.8170413165266108,
+              "type": "local_factual",
+              "confidence": 0.7180449579831933
+            },
+            "weight_allocation": {
+              "dense": 0.24787813193479039,
+              "sparse": 0.5615207639518556,
+              "hybrid": 0.19060110411335424,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_67",
+            "query_text": "Thomas Stritch was an editor of which publican from Notre Dame?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.6644833531901673,
+            "processing_time": 0.026350021362304688,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.2306294563279856,
+              "type": "local_factual",
+              "confidence": 0.7676755347593582
+            },
+            "weight_allocation": {
+              "dense": 0.23273775953774184,
+              "sparse": 0.5128482016049626,
+              "hybrid": 0.25441403885729547,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_68",
+            "query_text": "Who was the president of Notre Dame in 2012?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6456112349472383,
+            "processing_time": 0.025678157806396484,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.963970588235294,
+              "type": "local_factual",
+              "confidence": 0.6756764705882352
+            },
+            "weight_allocation": {
+              "dense": 0.25400546292760984,
+              "sparse": 0.5617122465384324,
+              "hybrid": 0.18428229053395764,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_69",
+            "query_text": "The Kellogg Institute for International Studies is part of which university?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.5948865285610282,
+            "processing_time": 0.027640819549560547,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.0012678253119427,
+              "type": "local_factual",
+              "confidence": 0.740152139037433
+            },
+            "weight_allocation": {
+              "dense": 0.2206886003800282,
+              "sparse": 0.5179011688346065,
+              "hybrid": 0.2614102307853652,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_70",
+            "query_text": "What does the Kroc Institute at Notre Dame focus on?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档3：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。",
+            "confidence": 0.591757057757347,
+            "processing_time": 0.02567315101623535,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.9668075980392155,
+              "type": "local_factual",
+              "confidence": 0.7360169117647059
+            },
+            "weight_allocation": {
+              "dense": 0.25051609181384515,
+              "sparse": 0.5631082707490866,
+              "hybrid": 0.18637563743706825,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_71",
+            "query_text": "In what year did Notre Dame begin to host the Global Adaptation Index?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02787184715270996,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.01440233785822,
+              "type": "local_factual",
+              "confidence": 0.7417282805429863
+            },
+            "weight_allocation": {
+              "dense": 0.2187865253266436,
+              "sparse": 0.5202363056162475,
+              "hybrid": 0.260977169057109,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_72",
+            "query_text": "What threat does the Global Adaptation Index study?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02486109733581543,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.562481617647059,
+              "type": "local_factual",
+              "confidence": 0.687497794117647
+            },
+            "weight_allocation": {
+              "dense": 0.23702793319408993,
+              "sparse": 0.5700342892248302,
+              "hybrid": 0.19293777758107972,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_73",
+            "query_text": "How many undergrads were attending Notre Dame in 2014?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6540628961317423,
+            "processing_time": 0.025231122970581055,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.7122794117647058,
+              "type": "local_factual",
+              "confidence": 0.7054735294117647
+            },
+            "weight_allocation": {
+              "dense": 0.24441874578474757,
+              "sparse": 0.5664155529035281,
+              "hybrid": 0.18916570131172436,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_74",
+            "query_text": "What percentage of students at Notre Dame are the children of former Notre Dame students?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6426569414185885,
+            "processing_time": 0.02751016616821289,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.1721200980392155,
+              "type": "local_factual",
+              "confidence": 0.7606544117647058
+            },
+            "weight_allocation": {
+              "dense": 0.2252213263938357,
+              "sparse": 0.5144058004594371,
+              "hybrid": 0.26037287314672736,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_75",
+            "query_text": "How many teams participate in the Notre Dame Bookstore Basketball tournament?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.025548934936523438,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.8816789215686276,
+              "type": "local_factual",
+              "confidence": 0.7258014705882353
+            },
+            "weight_allocation": {
+              "dense": 0.24213880142559208,
+              "sparse": 0.5666962195335744,
+              "hybrid": 0.1911649790408335,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_76",
+            "query_text": "For what cause is money raised at the Bengal Bouts tournament at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02673816680908203,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.1624431022408963,
+              "type": "local_factual",
+              "confidence": 0.7594931722689076
+            },
+            "weight_allocation": {
+              "dense": 0.23453440993283264,
+              "sparse": 0.5059680563182307,
+              "hybrid": 0.25949753374893664,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_77",
+            "query_text": "How many students in total were at Notre Dame in 2014?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6475714206960419,
+            "processing_time": 0.0258941650390625,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.7029857397504458,
+              "type": "local_factual",
+              "confidence": 0.7043582887700535
+            },
+            "weight_allocation": {
+              "dense": 0.2451992338099176,
+              "sparse": 0.5671393069527881,
+              "hybrid": 0.18766145923729435,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_78",
+            "query_text": "What percentage of undergrads live on the Notre Dame campus?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02743697166442871,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.5614154411764705,
+              "type": "local_factual",
+              "confidence": 0.6873698529411765
+            },
+            "weight_allocation": {
+              "dense": 0.24651172956355294,
+              "sparse": 0.562197447242589,
+              "hybrid": 0.19129082319385793,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_79",
+            "query_text": "How many student housing areas are reserved for Notre Dame's graduate students?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.08353710174560547,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.8302726715686273,
+              "type": "local_factual",
+              "confidence": 0.7196327205882354
+            },
+            "weight_allocation": {
+              "dense": 0.24177679038850614,
+              "sparse": 0.5671228641635591,
+              "hybrid": 0.19110034544793464,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_80",
+            "query_text": "How many dorms for males are on the Notre Dame campus?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02767205238342285,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.3139705882352941,
+              "type": "local_factual",
+              "confidence": 0.6576764705882353
+            },
+            "weight_allocation": {
+              "dense": 0.16274840597247764,
+              "sparse": 0.659643460701338,
+              "hybrid": 0.17760813332618436,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_81",
+            "query_text": "What amount of the graduate student body at Notre Dame live on the campus?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6532138009714388,
+            "processing_time": 0.02881002426147461,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.9645702030812326,
+              "type": "local_factual",
+              "confidence": 0.7357484243697479
+            },
+            "weight_allocation": {
+              "dense": 0.2506609127147215,
+              "sparse": 0.5596189743988084,
+              "hybrid": 0.18972011288647017,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_82",
+            "query_text": "There are how many dorms for females at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.025458097457885742,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.7666789215686274,
+              "type": "local_factual",
+              "confidence": 0.7120014705882354
+            },
+            "weight_allocation": {
+              "dense": 0.2596147021506598,
+              "sparse": 0.5537202787815397,
+              "hybrid": 0.18666501906780045,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_83",
+            "query_text": "What is Congregation of Holy Cross in Latin?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.5870409431105914,
+            "processing_time": 0.024450063705444336,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.8143581495098038,
+              "type": "local_factual",
+              "confidence": 0.7177229779411765
+            },
+            "weight_allocation": {
+              "dense": 0.2544918236233656,
+              "sparse": 0.5590183407266691,
+              "hybrid": 0.18648983564996532,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_84",
+            "query_text": "What percentage of Notre Dame students feel they are Christian?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02640986442565918,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.199987745098039,
+              "type": "local_factual",
+              "confidence": 0.7639985294117646
+            },
+            "weight_allocation": {
+              "dense": 0.2285459247364635,
+              "sparse": 0.5147525572351992,
+              "hybrid": 0.2567015180283374,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_85",
+            "query_text": "How often is Catholic mass held at Notre Dame in a week?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02991509437561035,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.0384528186274506,
+              "type": "local_factual",
+              "confidence": 0.7446143382352941
+            },
+            "weight_allocation": {
+              "dense": 0.23215790302871941,
+              "sparse": 0.5144157765485009,
+              "hybrid": 0.25342632042277974,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_86",
+            "query_text": "How many chapels are on the Notre Dame campus?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.024230241775512695,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.2943872549019608,
+              "type": "local_factual",
+              "confidence": 0.6553264705882353
+            },
+            "weight_allocation": {
+              "dense": 0.16607403762444792,
+              "sparse": 0.6568902947248553,
+              "hybrid": 0.17703566765069684,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_87",
+            "query_text": "What amount of the student body of Notre Dame identifies as Catholic?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6364028929768112,
+            "processing_time": 0.028743982315063477,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.112248774509804,
+              "type": "local_factual",
+              "confidence": 0.7534698529411765
+            },
+            "weight_allocation": {
+              "dense": 0.2305571913664644,
+              "sparse": 0.5121672512444154,
+              "hybrid": 0.2572755573891201,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_88",
+            "query_text": "What was the music hall at Notre Dame called?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.024380922317504883,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.8650122549019608,
+              "type": "local_factual",
+              "confidence": 0.7238014705882352
+            },
+            "weight_allocation": {
+              "dense": 0.2587689942997212,
+              "sparse": 0.5551601027725338,
+              "hybrid": 0.18607090292774509,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_89",
+            "query_text": "In what year was the Main Building at Notre Dame razed in a fire?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6167639772474985,
+            "processing_time": 0.026674985885620117,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.0410539215686274,
+              "type": "local_factual",
+              "confidence": 0.7449264705882352
+            },
+            "weight_allocation": {
+              "dense": 0.228432335475202,
+              "sparse": 0.5137880973031225,
+              "hybrid": 0.25777956722167555,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_90",
+            "query_text": "Who was the president of Notre Dame in 1879?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.621268340769982,
+            "processing_time": 0.02693009376525879,
+            "retrieval_results": 3,
+            "query_analysis": {
+              "complexity": 1.963970588235294,
+              "type": "local_factual",
+              "confidence": 0.6756764705882352
+            },
+            "weight_allocation": {
+              "dense": 0.25400546292760984,
+              "sparse": 0.5617122465384324,
+              "hybrid": 0.18428229053395764,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_91",
+            "query_text": "On what date was the rebuilding of The Main Building begun at Notre Dame after the fire that claimed the previous?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.631712838086397,
+            "processing_time": 0.0685577392578125,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.2609698879551816,
+              "type": "local_factual",
+              "confidence": 0.7713163865546218
+            },
+            "weight_allocation": {
+              "dense": 0.23005530822651082,
+              "sparse": 0.5082876276762054,
+              "hybrid": 0.2616570640972838,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_92",
+            "query_text": "What did the Science Hall at Notre Dame come to be known as?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.027295827865600586,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.8649396681749622,
+              "type": "local_factual",
+              "confidence": 0.7237927601809955
+            },
+            "weight_allocation": {
+              "dense": 0.24708483732087125,
+              "sparse": 0.5632092368895479,
+              "hybrid": 0.18970592578958084,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_93",
+            "query_text": "What type of education was pushed at Notre Dame before its embracing of national standards?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6339802392017977,
+            "processing_time": 0.02820611000061035,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.094987745098039,
+              "type": "local_factual",
+              "confidence": 0.7513985294117647
+            },
+            "weight_allocation": {
+              "dense": 0.2212485776885003,
+              "sparse": 0.515869340658513,
+              "hybrid": 0.2628820816529868,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_94",
+            "query_text": "Which college did Notre Dame add in 1921?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.0260770320892334,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.8565226715686274,
+              "type": "local_factual",
+              "confidence": 0.7227827205882353
+            },
+            "weight_allocation": {
+              "dense": 0.250097891948592,
+              "sparse": 0.565489572596886,
+              "hybrid": 0.18441253545452205,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_95",
+            "query_text": "In 1919 a new president of Notre Dame was named, who was it?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6342308986017304,
+            "processing_time": 0.02794480323791504,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.0212292609351437,
+              "type": "local_factual",
+              "confidence": 0.7425475113122173
+            },
+            "weight_allocation": {
+              "dense": 0.22585359296937946,
+              "sparse": 0.5163468175460428,
+              "hybrid": 0.2577995894845776,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_96",
+            "query_text": "Over how many years did the change to national standards undertaken at Notre Dame in the early 20th century take place?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档3：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。",
+            "confidence": 0.6263795868154836,
+            "processing_time": 0.03323793411254883,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.1974877450980395,
+              "type": "local_factual",
+              "confidence": 0.7636985294117647
+            },
+            "weight_allocation": {
+              "dense": 0.2225811320328443,
+              "sparse": 0.5147423432636409,
+              "hybrid": 0.26267652470351477,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_97",
+            "query_text": "Those who attended a Jesuit college may have been forbidden from joining which Law School due to the curricula at the Jesuit institution?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.09253382682800293,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.0123737212276214,
+              "type": "local_factual",
+              "confidence": 0.7414848465473145
+            },
+            "weight_allocation": {
+              "dense": 0.2190872605116205,
+              "sparse": 0.514545091109286,
+              "hybrid": 0.2663676483790935,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_98",
+            "query_text": "The Notre Dame football team got a new head coach in 1918, who was it?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.031938791275024414,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.8964215686274508,
+              "type": "local_factual",
+              "confidence": 0.7275705882352941
+            },
+            "weight_allocation": {
+              "dense": 0.23904361695421056,
+              "sparse": 0.5690019645050346,
+              "hybrid": 0.19195441854075482,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_99",
+            "query_text": "What was the amount of wins Knute Rockne attained at Notre Dame while head coach?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6383640364385994,
+            "processing_time": 0.029454946517944336,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 2.018737745098039,
+              "type": "local_factual",
+              "confidence": 0.7422485294117647
+            },
+            "weight_allocation": {
+              "dense": 0.22374914296606108,
+              "sparse": 0.5139636714786584,
+              "hybrid": 0.26228718555528063,
+              "strategy": "precision_focused"
+            }
+          }
+        ],
+        "system_stats": {
+          "avg_confidence": 0.31124094812682657,
+          "avg_processing_time": 0.1002060580253601,
+          "avg_complexity": 1.942214316424731,
+          "total_processing_time": 10.02060580253601,
+          "throughput": 9.979436570061667,
+          "success_rate": 1.0
+        }
+      }
+    },
+    "synthetic": {
+      "intelligent_rag": {
+        "system_name": "intelligent_rag",
+        "total_queries": 100,
+        "successful_queries": 100,
+        "query_results": [
+          {
+            "query_id": "synthetic_0",
+            "query_text": "What is machine learning?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.5030947214213547,
+            "processing_time": 6.681816101074219,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.5868566176470589,
+              "type": "local_factual",
+              "confidence": 0.5704227941176471
+            },
+            "weight_allocation": {
+              "dense": 0.19727344165225483,
+              "sparse": 0.5141355794685383,
+              "hybrid": 0.288590978879207,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_1",
+            "query_text": "How does deep learning work?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...\n\n根据相关文档2：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...",
+            "confidence": 0.5750363091318651,
+            "processing_time": 0.026674270629882812,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.3630718954248366,
+              "type": "local_factual",
+              "confidence": 0.5435686274509803
+            },
+            "weight_allocation": {
+              "dense": 0.1255888116727831,
+              "sparse": 0.6167289892601929,
+              "hybrid": 0.25768219906702405,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_2",
+            "query_text": "What are the benefits of neural networks?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.49247257046177845,
+            "processing_time": 0.030148744583129883,
+            "retrieval_results": 1,
+            "query_analysis": {
+              "complexity": 1.7587867647058824,
+              "type": "local_factual",
+              "confidence": 0.6510544117647059
+            },
+            "weight_allocation": {
+              "dense": 0.19813893573710847,
+              "sparse": 0.5110270147440173,
+              "hybrid": 0.2908340495188741,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_3",
+            "query_text": "Compare artificial intelligence with alternatives",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Natural Language Processing (NLP) is a branch of artificial intelligence that focuses on the interaction between computers and human language. NLP techniques include text analysis, language translatio...\n\n根据相关文档2：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...",
+            "confidence": 0.6034489308991631,
+            "processing_time": 0.02777385711669922,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.4082352941176475,
+              "type": "local_factual",
+              "confidence": 0.6089882352941177
+            },
+            "weight_allocation": {
+              "dense": 0.1226648248776676,
+              "sparse": 0.6314460858538185,
+              "hybrid": 0.24588908926851386,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_4",
+            "query_text": "Explain the concept of natural language processing",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.5417360650458377,
+            "processing_time": 0.026185989379882812,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.6462464985994398,
+              "type": "local_factual",
+              "confidence": 0.6975495798319328
+            },
+            "weight_allocation": {
+              "dense": 0.19762345905157278,
+              "sparse": 0.5133457225479127,
+              "hybrid": 0.28903081840051453,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_5",
+            "query_text": "What are the applications of computer vision?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.6101181458927509,
+            "processing_time": 0.026007652282714844,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.570656512605042,
+              "type": "local_factual",
+              "confidence": 0.6284787815126051
+            },
+            "weight_allocation": {
+              "dense": 0.19820689945191966,
+              "sparse": 0.5161299390775581,
+              "hybrid": 0.2856631614705221,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_6",
+            "query_text": "How to implement reinforcement learning?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.5053742119893392,
+            "processing_time": 0.024761199951171875,
+            "retrieval_results": 4,
+            "query_analysis": {
+              "complexity": 1.407794117647059,
+              "type": "local_factual",
+              "confidence": 0.5489352941176471
+            },
+            "weight_allocation": {
+              "dense": 0.1255466838901411,
+              "sparse": 0.624552113415293,
+              "hybrid": 0.2499012026945658,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_7",
+            "query_text": "What are the challenges in transformer models?",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.028274059295654297,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.7702100840336135,
+              "type": "local_factual",
+              "confidence": 0.6524252100840336
+            },
+            "weight_allocation": {
+              "dense": 0.19748625083156832,
+              "sparse": 0.5133576477288752,
+              "hybrid": 0.2891561014395565,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_8",
+            "query_text": "Future trends in attention mechanism",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.5835182588676368,
+            "processing_time": 0.028896093368530273,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.2286764705882351,
+              "type": "local_factual",
+              "confidence": 0.5874411764705882
+            },
+            "weight_allocation": {
+              "dense": 0.12611743657253505,
+              "sparse": 0.6178696902142209,
+              "hybrid": 0.2560128732132441,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_9",
+            "query_text": "Best practices for BERT",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档2：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档3：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。",
+            "confidence": 0.49065462739099486,
+            "processing_time": 0.03305768966674805,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.0513602941176472,
+              "type": "local_factual",
+              "confidence": 0.5061632352941177
+            },
+            "weight_allocation": {
+              "dense": 0.1277389767694216,
+              "sparse": 0.6218656456202141,
+              "hybrid": 0.2503953776103644,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_10",
+            "query_text": "What is GPT?",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02372884750366211,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.066985294117647,
+              "type": "local_factual",
+              "confidence": 0.4480382352941176
+            },
+            "weight_allocation": {
+              "dense": 0.1283450626395495,
+              "sparse": 0.6305617013113451,
+              "hybrid": 0.24109323604910535,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_11",
+            "query_text": "How does retrieval systems work?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Retrieval Augmented Generation (RAG) is a technique that combines information retrieval with text generation. RAG systems first retrieve relevant documents and then generate answers based on these doc...\n\n根据相关文档2：Vector databases are specialized database systems designed to store and retrieve high-dimensional vectors efficiently. They calculate similarity between vectors to quickly find the most relevant data,...",
+            "confidence": 0.578127533018286,
+            "processing_time": 0.026393890380859375,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.4323529411764708,
+              "type": "local_factual",
+              "confidence": 0.5518823529411765
+            },
+            "weight_allocation": {
+              "dense": 0.12505543749372963,
+              "sparse": 0.6185090325472274,
+              "hybrid": 0.25643552995904306,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_12",
+            "query_text": "What are the benefits of information retrieval?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档2：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档3：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。",
+            "confidence": 0.4619669393444612,
+            "processing_time": 0.023580074310302734,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.6376207983193276,
+              "type": "local_factual",
+              "confidence": 0.6365144957983193
+            },
+            "weight_allocation": {
+              "dense": 0.19820287556636038,
+              "sparse": 0.5164299166429447,
+              "hybrid": 0.2853672077906948,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_13",
+            "query_text": "Compare question answering with alternatives",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.024448871612548828,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.4486764705882353,
+              "type": "local_factual",
+              "confidence": 0.6138411764705882
+            },
+            "weight_allocation": {
+              "dense": 0.12636535765833629,
+              "sparse": 0.6182645449361811,
+              "hybrid": 0.25537009740548255,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_14",
+            "query_text": "Explain the concept of text summarization",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档2：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.4608885923372145,
+            "processing_time": 0.024801969528198242,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.221985294117647,
+              "type": "local_factual",
+              "confidence": 0.5866382352941176
+            },
+            "weight_allocation": {
+              "dense": 0.1262325838464214,
+              "sparse": 0.6140069331521323,
+              "hybrid": 0.2597604830014462,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_15",
+            "query_text": "What are the applications of sentiment analysis?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档2：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档3：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。",
+            "confidence": 0.4731190305106912,
+            "processing_time": 0.029044389724731445,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.8371743697478993,
+              "type": "local_factual",
+              "confidence": 0.6604609243697479
+            },
+            "weight_allocation": {
+              "dense": 0.19750731793532358,
+              "sparse": 0.5137585027991076,
+              "hybrid": 0.2887341792655689,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_16",
+            "query_text": "How to implement named entity recognition?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.45423974307348614,
+            "processing_time": 0.029678821563720703,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.3368566176470589,
+              "type": "local_factual",
+              "confidence": 0.6004227941176471
+            },
+            "weight_allocation": {
+              "dense": 0.12614282524330847,
+              "sparse": 0.6187825790414955,
+              "hybrid": 0.25507459571519614,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_17",
+            "query_text": "What are the challenges in part-of-speech tagging?",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.0264739990234375,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.6443172268907564,
+              "type": "local_factual",
+              "confidence": 0.6373180672268908
+            },
+            "weight_allocation": {
+              "dense": 0.19810152334155484,
+              "sparse": 0.5167371242168038,
+              "hybrid": 0.2851613524416414,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_18",
+            "query_text": "Future trends in semantic search",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：向量数据库是专门用于存储和检索高维向量的数据库系统。它们通过计算向量之间的相似度来快速找到最相关的数据，广泛应用于推荐系统和语义搜索。\n\n根据相关文档2：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.4375636759247065,
+            "processing_time": 0.024492979049682617,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.1161764705882353,
+              "type": "local_factual",
+              "confidence": 0.5739411764705883
+            },
+            "weight_allocation": {
+              "dense": 0.1275413877002814,
+              "sparse": 0.615592864745111,
+              "hybrid": 0.25686574755460767,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_19",
+            "query_text": "Best practices for vector databases",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Vector databases are specialized database systems designed to store and retrieve high-dimensional vectors efficiently. They calculate similarity between vectors to quickly find the most relevant data,...",
+            "confidence": 0.48250404857455603,
+            "processing_time": 0.024057865142822266,
+            "retrieval_results": 1,
+            "query_analysis": {
+              "complexity": 1.5168014705882356,
+              "type": "local_factual",
+              "confidence": 0.6220161764705883
+            },
+            "weight_allocation": {
+              "dense": 0.19823221395151008,
+              "sparse": 0.5136324343485377,
+              "hybrid": 0.28813535169995225,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_20",
+            "query_text": "What is embedding models?",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02484416961669922,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.5868566176470589,
+              "type": "local_factual",
+              "confidence": 0.5704227941176471
+            },
+            "weight_allocation": {
+              "dense": 0.19727344165225483,
+              "sparse": 0.5141355794685383,
+              "hybrid": 0.288590978879207,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_21",
+            "query_text": "How does fine-tuning work?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档3：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。",
+            "confidence": 0.5191034819897656,
+            "processing_time": 0.024398088455200195,
+            "retrieval_results": 4,
+            "query_analysis": {
+              "complexity": 1.1193566176470586,
+              "type": "local_factual",
+              "confidence": 0.4543227941176471
+            },
+            "weight_allocation": {
+              "dense": 0.12535771192377201,
+              "sparse": 0.633488521977078,
+              "hybrid": 0.24115376609915004,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_22",
+            "query_text": "What are the benefits of transfer learning?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.5398548231231952,
+            "processing_time": 0.025243043899536133,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.6328939075630253,
+              "type": "local_factual",
+              "confidence": 0.635947268907563
+            },
+            "weight_allocation": {
+              "dense": 0.1986381176018384,
+              "sparse": 0.5151374694327058,
+              "hybrid": 0.28622441296545587,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_23",
+            "query_text": "Compare few-shot learning with alternatives",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...\n\n根据相关文档2：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.6007781734406855,
+            "processing_time": 0.02342987060546875,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.376985294117647,
+              "type": "local_factual",
+              "confidence": 0.6052382352941177
+            },
+            "weight_allocation": {
+              "dense": 0.1262712516783904,
+              "sparse": 0.6184055938773109,
+              "hybrid": 0.2553231544442988,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_24",
+            "query_text": "Explain the concept of zero-shot learning",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.5106583954531658,
+            "processing_time": 0.026606082916259766,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.298731617647059,
+              "type": "local_factual",
+              "confidence": 0.5958477941176471
+            },
+            "weight_allocation": {
+              "dense": 0.12637306301311038,
+              "sparse": 0.6136738466258055,
+              "hybrid": 0.25995309036108416,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_25",
+            "query_text": "What are the applications of meta-learning?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档2：向量数据库是专门用于存储和检索高维向量的数据库系统。它们通过计算向量之间的相似度来快速找到最相关的数据，广泛应用于推荐系统和语义搜索。\n\n根据相关文档3：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。",
+            "confidence": 0.5284733208006758,
+            "processing_time": 0.02496623992919922,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.5389154411764707,
+              "type": "local_factual",
+              "confidence": 0.5646698529411764
+            },
+            "weight_allocation": {
+              "dense": 0.19773187407178008,
+              "sparse": 0.5206016699832783,
+              "hybrid": 0.28166645594494166,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_26",
+            "query_text": "How to implement machine learning?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.48628429966442044,
+            "processing_time": 0.02512526512145996,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.4943218954248367,
+              "type": "local_factual",
+              "confidence": 0.5593186274509805
+            },
+            "weight_allocation": {
+              "dense": 0.1250485089191288,
+              "sparse": 0.6189531063544609,
+              "hybrid": 0.25599838472641023,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_27",
+            "query_text": "What are the challenges in deep learning?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...\n\n根据相关文档2：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...",
+            "confidence": 0.6193042172631761,
+            "processing_time": 0.02295088768005371,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.7587867647058824,
+              "type": "local_factual",
+              "confidence": 0.6510544117647059
+            },
+            "weight_allocation": {
+              "dense": 0.19813893573710847,
+              "sparse": 0.5110270147440173,
+              "hybrid": 0.2908340495188741,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_28",
+            "query_text": "Future trends in neural networks",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.4766107439945909,
+            "processing_time": 0.02409982681274414,
+            "retrieval_results": 1,
+            "query_analysis": {
+              "complexity": 1.403954248366013,
+              "type": "local_factual",
+              "confidence": 0.6084745098039216
+            },
+            "weight_allocation": {
+              "dense": 0.1269868647928152,
+              "sparse": 0.6087707249493536,
+              "hybrid": 0.2642424102578312,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_29",
+            "query_text": "Best practices for artificial intelligence",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Natural Language Processing (NLP) is a branch of artificial intelligence that focuses on the interaction between computers and human language. NLP techniques include text analysis, language translatio...\n\n根据相关文档2：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...",
+            "confidence": 0.601166626662325,
+            "processing_time": 0.024791955947875977,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.3599264705882352,
+              "type": "local_factual",
+              "confidence": 0.6031911764705882
+            },
+            "weight_allocation": {
+              "dense": 0.12670620986363212,
+              "sparse": 0.6180497550316294,
+              "hybrid": 0.2552440351047385,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_30",
+            "query_text": "What is natural language processing?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.5130211579122789,
+            "processing_time": 0.02590489387512207,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.5544607843137257,
+              "type": "local_factual",
+              "confidence": 0.6265352941176471
+            },
+            "weight_allocation": {
+              "dense": 0.19870950646413485,
+              "sparse": 0.5179278426993156,
+              "hybrid": 0.2833626508365495,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_31",
+            "query_text": "How does computer vision work?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档3：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。",
+            "confidence": 0.5281939256830525,
+            "processing_time": 0.023813962936401367,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.1640441176470588,
+              "type": "local_factual",
+              "confidence": 0.5196852941176471
+            },
+            "weight_allocation": {
+              "dense": 0.1261191968366206,
+              "sparse": 0.623796070589797,
+              "hybrid": 0.2500847325735823,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_32",
+            "query_text": "What are the benefits of reinforcement learning?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...\n\n根据相关文档2：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.613709052895685,
+            "processing_time": 0.02357029914855957,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.6443172268907564,
+              "type": "local_factual",
+              "confidence": 0.6373180672268908
+            },
+            "weight_allocation": {
+              "dense": 0.19810152334155484,
+              "sparse": 0.5167371242168038,
+              "hybrid": 0.2851613524416414,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_33",
+            "query_text": "Compare transformer models with alternatives",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.025423049926757812,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.5914542483660132,
+              "type": "local_factual",
+              "confidence": 0.6309745098039216
+            },
+            "weight_allocation": {
+              "dense": 0.19701732475138592,
+              "sparse": 0.5177168052758119,
+              "hybrid": 0.2852658699728022,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_34",
+            "query_text": "Explain the concept of attention mechanism",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.5907857599148667,
+            "processing_time": 0.0247650146484375,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.2922977941176472,
+              "type": "local_factual",
+              "confidence": 0.5950757352941176
+            },
+            "weight_allocation": {
+              "dense": 0.12534067887728145,
+              "sparse": 0.615249041991853,
+              "hybrid": 0.2594102791308655,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_35",
+            "query_text": "What are the applications of BERT?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档2：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档3：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。",
+            "confidence": 0.5166693251144973,
+            "processing_time": 0.023463964462280273,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.4359742647058824,
+              "type": "local_factual",
+              "confidence": 0.5523169117647059
+            },
+            "weight_allocation": {
+              "dense": 0.12683831119651073,
+              "sparse": 0.6148160991607474,
+              "hybrid": 0.25834558964274174,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_36",
+            "query_text": "How to implement GPT?",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02345585823059082,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.0724816176470588,
+              "type": "local_factual",
+              "confidence": 0.4486977941176471
+            },
+            "weight_allocation": {
+              "dense": 0.1257395614972601,
+              "sparse": 0.6346008395590598,
+              "hybrid": 0.23965959894368008,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_37",
+            "query_text": "What are the challenges in retrieval systems?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Retrieval Augmented Generation (RAG) is a technique that combines information retrieval with text generation. RAG systems first retrieve relevant documents and then generate answers based on these doc...\n\n根据相关文档2：Vector databases are specialized database systems designed to store and retrieve high-dimensional vectors efficiently. They calculate similarity between vectors to quickly find the most relevant data,...",
+            "confidence": 0.6222457683303937,
+            "processing_time": 0.02625727653503418,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.8170850840336135,
+              "type": "local_factual",
+              "confidence": 0.6580502100840336
+            },
+            "weight_allocation": {
+              "dense": 0.19779496477857833,
+              "sparse": 0.5126175008265862,
+              "hybrid": 0.28958753439483553,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_38",
+            "query_text": "Future trends in information retrieval",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档2：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.440880677299942,
+            "processing_time": 0.023360013961791992,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.2474264705882352,
+              "type": "local_factual",
+              "confidence": 0.5896911764705882
+            },
+            "weight_allocation": {
+              "dense": 0.12697500298939574,
+              "sparse": 0.6172263596827144,
+              "hybrid": 0.2557986373278899,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_39",
+            "query_text": "Best practices for question answering",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.024296045303344727,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.3351102941176471,
+              "type": "local_factual",
+              "confidence": 0.6002132352941176
+            },
+            "weight_allocation": {
+              "dense": 0.12716067318927515,
+              "sparse": 0.6169287226358561,
+              "hybrid": 0.25591060417486877,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_40",
+            "query_text": "What is text summarization?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档2：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.4450295465071865,
+            "processing_time": 0.024630069732666016,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.363235294117647,
+              "type": "local_factual",
+              "confidence": 0.5435882352941177
+            },
+            "weight_allocation": {
+              "dense": 0.12716059061613202,
+              "sparse": 0.6188726266247294,
+              "hybrid": 0.2539667827591386,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_41",
+            "query_text": "How does sentiment analysis work?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档2：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档3：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。",
+            "confidence": 0.4218398700787583,
+            "processing_time": 0.02465677261352539,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.4946691176470586,
+              "type": "local_factual",
+              "confidence": 0.559360294117647
+            },
+            "weight_allocation": {
+              "dense": 0.12531191223158317,
+              "sparse": 0.6180550131033105,
+              "hybrid": 0.2566330746651063,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_42",
+            "query_text": "What are the benefits of named entity recognition?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.4993590208982329,
+            "processing_time": 0.02499985694885254,
+            "retrieval_results": 1,
+            "query_analysis": {
+              "complexity": 1.5851148897058822,
+              "type": "local_factual",
+              "confidence": 0.6902137867647058
+            },
+            "weight_allocation": {
+              "dense": 0.1974740974909938,
+              "sparse": 0.5182401523321781,
+              "hybrid": 0.284285750176828,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_43",
+            "query_text": "Compare part-of-speech tagging with alternatives",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02570796012878418,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.3736764705882354,
+              "type": "local_factual",
+              "confidence": 0.6048411764705882
+            },
+            "weight_allocation": {
+              "dense": 0.12544526401916464,
+              "sparse": 0.620580766962114,
+              "hybrid": 0.25397396901872143,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_44",
+            "query_text": "Explain the concept of semantic search",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：向量数据库是专门用于存储和检索高维向量的数据库系统。它们通过计算向量之间的相似度来快速找到最相关的数据，广泛应用于推荐系统和语义搜索。\n\n根据相关文档2：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.44194567507953175,
+            "processing_time": 0.022817134857177734,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.220606617647059,
+              "type": "local_factual",
+              "confidence": 0.5864727941176471
+            },
+            "weight_allocation": {
+              "dense": 0.12646688330728592,
+              "sparse": 0.6131073314428176,
+              "hybrid": 0.26042578524989657,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_45",
+            "query_text": "What are the applications of vector databases?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Vector databases are specialized database systems designed to store and retrieve high-dimensional vectors efficiently. They calculate similarity between vectors to quickly find the most relevant data,...",
+            "confidence": 0.49323373768289963,
+            "processing_time": 0.026515960693359375,
+            "retrieval_results": 1,
+            "query_analysis": {
+              "complexity": 1.7702100840336135,
+              "type": "local_factual",
+              "confidence": 0.6524252100840336
+            },
+            "weight_allocation": {
+              "dense": 0.1976172595816708,
+              "sparse": 0.5130936885211214,
+              "hybrid": 0.2892890518972078,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_46",
+            "query_text": "How to implement embedding models?",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.023340940475463867,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.4943218954248367,
+              "type": "local_factual",
+              "confidence": 0.5593186274509805
+            },
+            "weight_allocation": {
+              "dense": 0.1250485089191288,
+              "sparse": 0.6189531063544609,
+              "hybrid": 0.25599838472641023,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_47",
+            "query_text": "What are the challenges in fine-tuning?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.5393489686106516,
+            "processing_time": 0.025912046432495117,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.5297242647058824,
+              "type": "local_factual",
+              "confidence": 0.563566911764706
+            },
+            "weight_allocation": {
+              "dense": 0.19816416981282736,
+              "sparse": 0.5195389866250413,
+              "hybrid": 0.2822968435621315,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_48",
+            "query_text": "Future trends in transfer learning",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.5086031278838103,
+            "processing_time": 0.023658037185668945,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.2099264705882353,
+              "type": "local_factual",
+              "confidence": 0.5851911764705883
+            },
+            "weight_allocation": {
+              "dense": 0.12740425314711507,
+              "sparse": 0.616113105970617,
+              "hybrid": 0.2564826408822679,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_49",
+            "query_text": "Best practices for few-shot learning",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...\n\n根据相关文档2：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.5927414113188139,
+            "processing_time": 0.024222850799560547,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.2193014705882352,
+              "type": "local_factual",
+              "confidence": 0.5863161764705882
+            },
+            "weight_allocation": {
+              "dense": 0.12711539258395962,
+              "sparse": 0.6168783030654249,
+              "hybrid": 0.25600630435061555,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_50",
+            "query_text": "What is zero-shot learning?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...\n\n根据相关文档2：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.579592401783274,
+            "processing_time": 0.026185035705566406,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.4673253676470588,
+              "type": "local_factual",
+              "confidence": 0.5560790441176471
+            },
+            "weight_allocation": {
+              "dense": 0.1274571818487916,
+              "sparse": 0.6184915352460734,
+              "hybrid": 0.2540512829051352,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_51",
+            "query_text": "How does meta-learning work?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：向量数据库是专门用于存储和检索高维向量的数据库系统。它们通过计算向量之间的相似度来快速找到最相关的数据，广泛应用于推荐系统和语义搜索。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.522100409176776,
+            "processing_time": 0.024198055267333984,
+            "retrieval_results": 4,
+            "query_analysis": {
+              "complexity": 1.1427941176470588,
+              "type": "local_factual",
+              "confidence": 0.4571352941176471
+            },
+            "weight_allocation": {
+              "dense": 0.12520707917575666,
+              "sparse": 0.6330428111125993,
+              "hybrid": 0.24175010971164404,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_52",
+            "query_text": "What are the benefits of machine learning?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...\n\n根据相关文档2：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.6204026346202142,
+            "processing_time": 0.024422883987426758,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.7434243697478993,
+              "type": "local_factual",
+              "confidence": 0.6492109243697479
+            },
+            "weight_allocation": {
+              "dense": 0.19789373650230252,
+              "sparse": 0.5117071420833518,
+              "hybrid": 0.29039912141434565,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_53",
+            "query_text": "Compare deep learning with alternatives",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...\n\n根据相关文档2：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...",
+            "confidence": 0.6075373805118327,
+            "processing_time": 0.026626110076904297,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.504138071895425,
+              "type": "local_factual",
+              "confidence": 0.6204965686274511
+            },
+            "weight_allocation": {
+              "dense": 0.19582574845501863,
+              "sparse": 0.5237741159722177,
+              "hybrid": 0.28040013557276383,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_54",
+            "query_text": "Explain the concept of neural networks",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.45653879085583937,
+            "processing_time": 0.024447202682495117,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.4983843954248366,
+              "type": "local_factual",
+              "confidence": 0.6198061274509804
+            },
+            "weight_allocation": {
+              "dense": 0.1260951256945793,
+              "sparse": 0.6080330963191348,
+              "hybrid": 0.265871777986286,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_55",
+            "query_text": "What are the applications of artificial intelligence?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.5289711728191512,
+            "processing_time": 0.02690887451171875,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.6998581932773107,
+              "type": "local_factual",
+              "confidence": 0.6439829831932773
+            },
+            "weight_allocation": {
+              "dense": 0.19763736586651529,
+              "sparse": 0.5181667843481467,
+              "hybrid": 0.28419584978533813,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_56",
+            "query_text": "How to implement natural language processing?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.5167692295353491,
+            "processing_time": 0.026957988739013672,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.641519607843137,
+              "type": "local_factual",
+              "confidence": 0.6369823529411764
+            },
+            "weight_allocation": {
+              "dense": 0.19730015121184186,
+              "sparse": 0.5215353150681651,
+              "hybrid": 0.28116453371999306,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_57",
+            "query_text": "What are the challenges in computer vision?",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02713322639465332,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.5572636554621848,
+              "type": "local_factual",
+              "confidence": 0.6268716386554622
+            },
+            "weight_allocation": {
+              "dense": 0.19843087497062323,
+              "sparse": 0.5154404448830445,
+              "hybrid": 0.2861286801463324,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_58",
+            "query_text": "Future trends in reinforcement learning",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.5022873506905773,
+            "processing_time": 0.02340102195739746,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.2568014705882353,
+              "type": "local_factual",
+              "confidence": 0.5908161764705883
+            },
+            "weight_allocation": {
+              "dense": 0.126879998373222,
+              "sparse": 0.6174722678990421,
+              "hybrid": 0.2556477337277359,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_59",
+            "query_text": "Best practices for transformer models",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.025973081588745117,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.525829248366013,
+              "type": "local_factual",
+              "confidence": 0.6230995098039216
+            },
+            "weight_allocation": {
+              "dense": 0.1979882390875268,
+              "sparse": 0.514644796653627,
+              "hybrid": 0.2873669642588463,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_60",
+            "query_text": "What is attention mechanism?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档2：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档3：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。",
+            "confidence": 0.5841100720843491,
+            "processing_time": 0.0234072208404541,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.468704044117647,
+              "type": "local_factual",
+              "confidence": 0.5562444852941177
+            },
+            "weight_allocation": {
+              "dense": 0.12581240485506257,
+              "sparse": 0.6204402411241245,
+              "hybrid": 0.2537473540208129,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_61",
+            "query_text": "How does BERT work?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档2：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档3：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。",
+            "confidence": 0.4725630177222088,
+            "processing_time": 0.024672985076904297,
+            "retrieval_results": 4,
+            "query_analysis": {
+              "complexity": 0.9552941176470588,
+              "type": "local_factual",
+              "confidence": 0.43463529411764706
+            },
+            "weight_allocation": {
+              "dense": 0.1257483952294499,
+              "sparse": 0.6355058050309547,
+              "hybrid": 0.23874579973959537,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_62",
+            "query_text": "What are the benefits of GPT?",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02398204803466797,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.708186274509804,
+              "type": "local_factual",
+              "confidence": 0.5849823529411764
+            },
+            "weight_allocation": {
+              "dense": 0.1944083592550113,
+              "sparse": 0.5232053325635594,
+              "hybrid": 0.2823863081814293,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_63",
+            "query_text": "Compare retrieval systems with alternatives",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Retrieval Augmented Generation (RAG) is a technique that combines information retrieval with text generation. RAG systems first retrieve relevant documents and then generate answers based on these doc...\n\n根据相关文档2：Vector databases are specialized database systems designed to store and retrieve high-dimensional vectors efficiently. They calculate similarity between vectors to quickly find the most relevant data,...",
+            "confidence": 0.6113441992573859,
+            "processing_time": 0.025291919708251953,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.5918014705882348,
+              "type": "local_factual",
+              "confidence": 0.6310161764705882
+            },
+            "weight_allocation": {
+              "dense": 0.1968947664109548,
+              "sparse": 0.5177289898593936,
+              "hybrid": 0.28537624372965154,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_64",
+            "query_text": "Explain the concept of information retrieval",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档2：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.44300106531185657,
+            "processing_time": 0.023988008499145508,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.3079227941176472,
+              "type": "local_factual",
+              "confidence": 0.5969507352941177
+            },
+            "weight_allocation": {
+              "dense": 0.12608290778946296,
+              "sparse": 0.6147801406674638,
+              "hybrid": 0.2591369515430734,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_65",
+            "query_text": "What are the applications of question answering?",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02552485466003418,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.603876050420168,
+              "type": "local_factual",
+              "confidence": 0.6324651260504202
+            },
+            "weight_allocation": {
+              "dense": 0.19683173418492667,
+              "sparse": 0.5228754339303219,
+              "hybrid": 0.28029283188475146,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_66",
+            "query_text": "How to implement text summarization?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档2：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.44521786082292564,
+            "processing_time": 0.022999048233032227,
+            "retrieval_results": 4,
+            "query_analysis": {
+              "complexity": 1.295294117647059,
+              "type": "local_factual",
+              "confidence": 0.535435294117647
+            },
+            "weight_allocation": {
+              "dense": 0.12572078081416077,
+              "sparse": 0.6243190013860835,
+              "hybrid": 0.24996021779975572,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_67",
+            "query_text": "What are the challenges in sentiment analysis?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：向量数据库是专门用于存储和检索高维向量的数据库系统。它们通过计算向量之间的相似度来快速找到最相关的数据，广泛应用于推荐系统和语义搜索。",
+            "confidence": 0.47018565943299323,
+            "processing_time": 0.027016878128051758,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.8237815126050418,
+              "type": "local_factual",
+              "confidence": 0.658853781512605
+            },
+            "weight_allocation": {
+              "dense": 0.19769523489260135,
+              "sparse": 0.5130125354310313,
+              "hybrid": 0.2892922296763673,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_68",
+            "query_text": "Future trends in named entity recognition",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.4655980404803835,
+            "processing_time": 0.02448892593383789,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.1594852941176472,
+              "type": "local_factual",
+              "confidence": 0.6391382352941177
+            },
+            "weight_allocation": {
+              "dense": 0.12620547221732634,
+              "sparse": 0.6191542833196287,
+              "hybrid": 0.254640244463045,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_69",
+            "query_text": "Best practices for part-of-speech tagging",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02492213249206543,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.2788602941176472,
+              "type": "local_factual",
+              "confidence": 0.5934632352941176
+            },
+            "weight_allocation": {
+              "dense": 0.12671037712477315,
+              "sparse": 0.6179637291948246,
+              "hybrid": 0.2553258936804023,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_70",
+            "query_text": "What is semantic search?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：向量数据库是专门用于存储和检索高维向量的数据库系统。它们通过计算向量之间的相似度来快速找到最相关的数据，广泛应用于推荐系统和语义搜索。\n\n根据相关文档2：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.4216585727082083,
+            "processing_time": 0.024912118911743164,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.3501378676470588,
+              "type": "local_factual",
+              "confidence": 0.542016544117647
+            },
+            "weight_allocation": {
+              "dense": 0.12726907831660006,
+              "sparse": 0.6189047690152246,
+              "hybrid": 0.2538261526681753,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_71",
+            "query_text": "How does vector databases work?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Vector databases are specialized database systems designed to store and retrieve high-dimensional vectors efficiently. They calculate similarity between vectors to quickly find the most relevant data,...",
+            "confidence": 0.4496897772682607,
+            "processing_time": 0.026092052459716797,
+            "retrieval_results": 1,
+            "query_analysis": {
+              "complexity": 1.3384191176470588,
+              "type": "local_factual",
+              "confidence": 0.5406102941176472
+            },
+            "weight_allocation": {
+              "dense": 0.1236211493123335,
+              "sparse": 0.6273575046613864,
+              "hybrid": 0.24902134602628007,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_72",
+            "query_text": "What are the benefits of embedding models?",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02427077293395996,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.765483193277311,
+              "type": "local_factual",
+              "confidence": 0.6518579831932774
+            },
+            "weight_allocation": {
+              "dense": 0.19788159980351633,
+              "sparse": 0.5117710978850065,
+              "hybrid": 0.2903473023114772,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_73",
+            "query_text": "Compare fine-tuning with alternatives",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.023529052734375,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.3961764705882354,
+              "type": "local_factual",
+              "confidence": 0.5475411764705882
+            },
+            "weight_allocation": {
+              "dense": 0.12744734387284234,
+              "sparse": 0.6152411200584358,
+              "hybrid": 0.2573115360687218,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_74",
+            "query_text": "Explain the concept of transfer learning",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.5217283477004859,
+            "processing_time": 0.023293256759643555,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.276672794117647,
+              "type": "local_factual",
+              "confidence": 0.5932007352941177
+            },
+            "weight_allocation": {
+              "dense": 0.12638387970485232,
+              "sparse": 0.6136094355640175,
+              "hybrid": 0.2600066847311302,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_75",
+            "query_text": "What are the applications of few-shot learning?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.5332476448886407,
+            "processing_time": 0.026013851165771484,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.5994117647058823,
+              "type": "local_factual",
+              "confidence": 0.6319294117647059
+            },
+            "weight_allocation": {
+              "dense": 0.1980903217251688,
+              "sparse": 0.5165126762060867,
+              "hybrid": 0.28539700206874447,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_76",
+            "query_text": "How to implement zero-shot learning?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...\n\n根据相关文档2：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.5742294408200392,
+            "processing_time": 0.02469611167907715,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.360919117647059,
+              "type": "local_factual",
+              "confidence": 0.5433102941176471
+            },
+            "weight_allocation": {
+              "dense": 0.12589992461740016,
+              "sparse": 0.6241205349248274,
+              "hybrid": 0.24997954045777243,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_77",
+            "query_text": "What are the challenges in meta-learning?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：向量数据库是专门用于存储和检索高维向量的数据库系统。它们通过计算向量之间的相似度来快速找到最相关的数据，广泛应用于推荐系统和语义搜索。",
+            "confidence": 0.5219496183516842,
+            "processing_time": 0.02678394317626953,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.5232904411764705,
+              "type": "local_factual",
+              "confidence": 0.5627948529411764
+            },
+            "weight_allocation": {
+              "dense": 0.19794467738935462,
+              "sparse": 0.5200611363935949,
+              "hybrid": 0.28199418621705064,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_78",
+            "query_text": "Future trends in machine learning",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.5070580456289043,
+            "processing_time": 0.02227306365966797,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.4133292483660131,
+              "type": "local_factual",
+              "confidence": 0.6095995098039215
+            },
+            "weight_allocation": {
+              "dense": 0.1266834631641835,
+              "sparse": 0.6097732204659833,
+              "hybrid": 0.26354331636983336,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_79",
+            "query_text": "Best practices for deep learning",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...\n\n根据相关文档2：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...",
+            "confidence": 0.6059546316631644,
+            "processing_time": 0.024144887924194336,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.4789542483660132,
+              "type": "local_factual",
+              "confidence": 0.6174745098039216
+            },
+            "weight_allocation": {
+              "dense": 0.12709896632678513,
+              "sparse": 0.6086295080203906,
+              "hybrid": 0.2642715256528242,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_80",
+            "query_text": "What is neural networks?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.439352551668866,
+            "processing_time": 0.023587942123413086,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.5751378676470589,
+              "type": "local_factual",
+              "confidence": 0.5690165441176471
+            },
+            "weight_allocation": {
+              "dense": 0.19785850867765017,
+              "sparse": 0.5125760575181566,
+              "hybrid": 0.28956543380419314,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_81",
+            "query_text": "How does artificial intelligence work?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档2：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档3：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。",
+            "confidence": 0.49694117962797757,
+            "processing_time": 0.023161888122558594,
+            "retrieval_results": 4,
+            "query_analysis": {
+              "complexity": 1.2515441176470588,
+              "type": "local_factual",
+              "confidence": 0.530185294117647
+            },
+            "weight_allocation": {
+              "dense": 0.1242070365759722,
+              "sparse": 0.6326362652787375,
+              "hybrid": 0.24315669814529034,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_82",
+            "query_text": "What are the benefits of natural language processing?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Natural Language Processing (NLP) is a branch of artificial intelligence that focuses on the interaction between computers and human language. NLP techniques include text analysis, language translatio...\n\n根据相关文档2：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.6459033775614772,
+            "processing_time": 0.02616596221923828,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.728734681372549,
+              "type": "local_factual",
+              "confidence": 0.7074481617647059
+            },
+            "weight_allocation": {
+              "dense": 0.1982509678085717,
+              "sparse": 0.5137649684649825,
+              "hybrid": 0.28798406372644575,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_83",
+            "query_text": "Compare computer vision with alternatives",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.023453950881958008,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.2830514705882354,
+              "type": "local_factual",
+              "confidence": 0.5939661764705882
+            },
+            "weight_allocation": {
+              "dense": 0.12526679266169582,
+              "sparse": 0.6249742522963231,
+              "hybrid": 0.2497589550419811,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_84",
+            "query_text": "Explain the concept of reinforcement learning",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档3：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。",
+            "confidence": 0.5219287520965602,
+            "processing_time": 0.024226903915405273,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.315735294117647,
+              "type": "local_factual",
+              "confidence": 0.5978882352941176
+            },
+            "weight_allocation": {
+              "dense": 0.12601503465394975,
+              "sparse": 0.6150444185223595,
+              "hybrid": 0.2589405468236907,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_85",
+            "query_text": "What are the applications of transformer models?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.5293346129240595,
+            "processing_time": 0.02303290367126465,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.7836029411764707,
+              "type": "local_factual",
+              "confidence": 0.6540323529411765
+            },
+            "weight_allocation": {
+              "dense": 0.19730612124429225,
+              "sparse": 0.5140908631083633,
+              "hybrid": 0.28860301564734453,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_86",
+            "query_text": "How to implement attention mechanism?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档3：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。",
+            "confidence": 0.578913938643093,
+            "processing_time": 0.02399897575378418,
+            "retrieval_results": 4,
+            "query_analysis": {
+              "complexity": 1.3796691176470588,
+              "type": "local_factual",
+              "confidence": 0.5455602941176471
+            },
+            "weight_allocation": {
+              "dense": 0.12469921952215943,
+              "sparse": 0.6253699750373445,
+              "hybrid": 0.24993080544049615,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_87",
+            "query_text": "What are the challenges in BERT?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档2：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档3：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。",
+            "confidence": 0.5231831341290091,
+            "processing_time": 0.02496194839477539,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.4203492647058824,
+              "type": "local_factual",
+              "confidence": 0.5504419117647059
+            },
+            "weight_allocation": {
+              "dense": 0.12707118461702668,
+              "sparse": 0.6140681071371704,
+              "hybrid": 0.2588607082458029,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_88",
+            "query_text": "Future trends in GPT",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02363896369934082,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.2337285539215688,
+              "type": "local_factual",
+              "confidence": 0.4680474264705883
+            },
+            "weight_allocation": {
+              "dense": 0.12953037565891837,
+              "sparse": 0.6093589970579861,
+              "hybrid": 0.2611106272830956,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_89",
+            "query_text": "Best practices for retrieval systems",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Retrieval Augmented Generation (RAG) is a technique that combines information retrieval with text generation. RAG systems first retrieve relevant documents and then generate answers based on these doc...\n\n根据相关文档2：Vector databases are specialized database systems designed to store and retrieve high-dimensional vectors efficiently. They calculate similarity between vectors to quickly find the most relevant data,...",
+            "confidence": 0.607934760841057,
+            "processing_time": 0.02363109588623047,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.5261764705882352,
+              "type": "local_factual",
+              "confidence": 0.6231411764705882
+            },
+            "weight_allocation": {
+              "dense": 0.197871984855569,
+              "sparse": 0.5145743438268104,
+              "hybrid": 0.28755367131762055,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_90",
+            "query_text": "What is information retrieval?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档2：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.4264968751243325,
+            "processing_time": 0.025624990463256836,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.492141544117647,
+              "type": "local_factual",
+              "confidence": 0.5590569852941176
+            },
+            "weight_allocation": {
+              "dense": 0.1269508284323429,
+              "sparse": 0.6194701599143704,
+              "hybrid": 0.25357901165328656,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_91",
+            "query_text": "How does question answering work?",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.026788949966430664,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.2671691176470588,
+              "type": "local_factual",
+              "confidence": 0.5320602941176471
+            },
+            "weight_allocation": {
+              "dense": 0.12595862015936293,
+              "sparse": 0.6240245628640002,
+              "hybrid": 0.25001681697663686,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_92",
+            "query_text": "What are the benefits of text summarization?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档2：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.4803164424301406,
+            "processing_time": 0.02556586265563965,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.5639600840336134,
+              "type": "local_factual",
+              "confidence": 0.6276752100840336
+            },
+            "weight_allocation": {
+              "dense": 0.19844984310434674,
+              "sparse": 0.5155169904174428,
+              "hybrid": 0.2860331664782104,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_93",
+            "query_text": "Compare sentiment analysis with alternatives",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Natural Language Processing (NLP) is a branch of artificial intelligence that focuses on the interaction between computers and human language. NLP techniques include text analysis, language translatio...",
+            "confidence": 0.4881376099452027,
+            "processing_time": 0.02354598045349121,
+            "retrieval_results": 1,
+            "query_analysis": {
+              "complexity": 1.6761764705882354,
+              "type": "local_factual",
+              "confidence": 0.6411411764705882
+            },
+            "weight_allocation": {
+              "dense": 0.19713359251254808,
+              "sparse": 0.5175079890190663,
+              "hybrid": 0.2853584184683857,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_94",
+            "query_text": "Explain the concept of named entity recognition",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：深度学习是机器学习的一个子集，它使用多层神经网络来学习数据的表示。深度学习在图像识别、自然语言处理和语音识别等领域取得了显著成功。\n\n根据相关文档2：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.47624121873098113,
+            "processing_time": 0.024643898010253906,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.221360294117647,
+              "type": "local_factual",
+              "confidence": 0.6465632352941175
+            },
+            "weight_allocation": {
+              "dense": 0.1255525013629056,
+              "sparse": 0.6163793735718947,
+              "hybrid": 0.2580681250651997,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_95",
+            "query_text": "What are the applications of part-of-speech tagging?",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.024236202239990234,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.679768907563025,
+              "type": "local_factual",
+              "confidence": 0.641572268907563
+            },
+            "weight_allocation": {
+              "dense": 0.19789960077284272,
+              "sparse": 0.5173719481636875,
+              "hybrid": 0.28472845106346983,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_96",
+            "query_text": "How to implement semantic search?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：向量数据库是专门用于存储和检索高维向量的数据库系统。它们通过计算向量之间的相似度来快速找到最相关的数据，广泛应用于推荐系统和语义搜索。\n\n根据相关文档2：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档3：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。",
+            "confidence": 0.4269946064702623,
+            "processing_time": 0.023204803466796875,
+            "retrieval_results": 4,
+            "query_analysis": {
+              "complexity": 1.2892279411764704,
+              "type": "local_factual",
+              "confidence": 0.5347073529411764
+            },
+            "weight_allocation": {
+              "dense": 0.12575441158081116,
+              "sparse": 0.6246244810381998,
+              "hybrid": 0.24962110738098886,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_97",
+            "query_text": "What are the challenges in vector databases?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Vector databases are specialized database systems designed to store and retrieve high-dimensional vectors efficiently. They calculate similarity between vectors to quickly find the most relevant data,...",
+            "confidence": 0.5086912210817591,
+            "processing_time": 0.02702474594116211,
+            "retrieval_results": 1,
+            "query_analysis": {
+              "complexity": 2.0901505602240897,
+              "type": "local_factual",
+              "confidence": 0.6908180672268908
+            },
+            "weight_allocation": {
+              "dense": 0.16998985865721195,
+              "sparse": 0.4521667925690976,
+              "hybrid": 0.37784334877369036,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_98",
+            "query_text": "Future trends in embedding models",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.02449202537536621,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.4353880718954248,
+              "type": "local_factual",
+              "confidence": 0.612246568627451
+            },
+            "weight_allocation": {
+              "dense": 0.12685880152095544,
+              "sparse": 0.6093709610819558,
+              "hybrid": 0.2637702373970888,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_99",
+            "query_text": "Best practices for fine-tuning",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：机器学习是人工智能的一个分支，它使计算机能够在没有明确编程的情况下学习。机器学习算法通过数据构建数学模型，以便对新数据进行预测或决策。\n\n根据相关文档2：自然语言处理（NLP）是计算机科学和人工智能的一个分支，专注于计算机与人类语言之间的交互。NLP技术包括文本分析、语言翻译和情感分析等。\n\n根据相关文档3：检索增强生成（RAG）是一种结合了信息检索和文本生成的技术。RAG系统首先检索相关文档，然后基于这些文档生成答案，提高了生成内容的准确性和可靠性。",
+            "confidence": 0.532747302607237,
+            "processing_time": 0.024077892303466797,
+            "retrieval_results": 5,
+            "query_analysis": {
+              "complexity": 1.215422794117647,
+              "type": "local_factual",
+              "confidence": 0.5258507352941177
+            },
+            "weight_allocation": {
+              "dense": 0.12705296984181613,
+              "sparse": 0.622694651526144,
+              "hybrid": 0.25025237863203975,
+              "strategy": "precision_focused"
+            }
+          }
+        ],
+        "system_stats": {
+          "avg_confidence": 0.4054855745950322,
+          "avg_processing_time": 0.09165147304534912,
+          "avg_complexity": 1.4519884315184401,
+          "total_processing_time": 9.165147304534912,
+          "throughput": 10.910899375345558,
+          "success_rate": 1.0
+        }
+      }
+    }
+  },
+  "end_time": "2025-06-25T01:29:50.695327",
+  "duration": 26.653727
+}

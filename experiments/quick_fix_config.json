@@ -1,0 +1,16 @@
+{
+  "datasets": [
+    "samples"
+  ],
+  "systems": [
+    "intelligent_rag"
+  ],
+  "metrics": [
+    "retrieval_quality",
+    "answer_quality",
+    "efficiency"
+  ],
+  "sample_size": 5,
+  "repetitions": 1,
+  "timeout": 30
+}

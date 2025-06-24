@@ -105,21 +105,21 @@ class DenseRetriever(BaseRetriever):
             # 尝试使用FAISS
             try:
                 import faiss
-                
-                # 创建FAISS索引
-                if self.vector_db_config["index_type"] == "IVF":
-                    # IVF索引（适合大规模数据）
-                    quantizer = faiss.IndexFlatIP(self.embedding_dimension)
-                    self.vector_index = faiss.IndexIVFFlat(
-                        quantizer, 
-                        self.embedding_dimension, 
-                        self.vector_db_config["nlist"]
-                    )
+
+                # 智能选择索引类型
+                index_type = self.vector_db_config.get("index_type", "Flat")
+
+                if index_type == "IVF":
+                    # IVF索引（适合大规模数据，但需要足够的训练数据）
+                    # 我们将在添加文档时动态决定是否使用IVF
+                    self.vector_index = None  # 延迟初始化
+                    self.use_ivf = True
                 else:
-                    # 简单的平面索引
+                    # 简单的平面索引（适合小规模数据）
                     self.vector_index = faiss.IndexFlatIP(self.embedding_dimension)
-                
-                self.logger.info(f"已创建FAISS索引: {self.vector_db_config['index_type']}")
+                    self.use_ivf = False
+
+                self.logger.info(f"向量索引配置: {index_type}")
                 return
                 
             except ImportError:
@@ -296,10 +296,32 @@ class DenseRetriever(BaseRetriever):
             if embeddings:
                 embeddings_array = np.array(embeddings).astype(np.float32)
 
+                # 智能选择索引类型
+                if self.vector_index is None:
+                    # 延迟初始化：根据数据量选择索引类型
+                    import faiss
+                    num_docs = len(embeddings_array)
+                    nlist = self.vector_db_config.get("nlist", 10)
+
+                    if self.use_ivf and num_docs >= nlist * 2:
+                        # 有足够数据使用IVF索引
+                        quantizer = faiss.IndexFlatIP(self.embedding_dimension)
+                        self.vector_index = faiss.IndexIVFFlat(
+                            quantizer, self.embedding_dimension, min(nlist, num_docs // 2)
+                        )
+                        self.logger.info(f"使用IVF索引，聚类数: {min(nlist, num_docs // 2)}")
+                    else:
+                        # 数据量不足，使用平面索引
+                        self.vector_index = faiss.IndexFlatIP(self.embedding_dimension)
+                        self.logger.info("数据量较小，使用平面索引")
+
                 if hasattr(self.vector_index, 'is_trained'):
-                    # 使用FAISS
+                    # 使用FAISS IVF索引
                     if not self.vector_index.is_trained:
                         self.vector_index.train(embeddings_array)
+                    self.vector_index.add(embeddings_array)
+                elif hasattr(self.vector_index, 'add'):
+                    # 使用FAISS平面索引
                     self.vector_index.add(embeddings_array)
                 else:
                     # 使用简化索引

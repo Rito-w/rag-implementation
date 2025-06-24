@@ -1,0 +1,18 @@
+{
+  "datasets": [
+    "samples",
+    "squad",
+    "synthetic"
+  ],
+  "systems": [
+    "intelligent_rag"
+  ],
+  "metrics": [
+    "retrieval_quality",
+    "answer_quality",
+    "efficiency"
+  ],
+  "sample_size": 100,
+  "repetitions": 1,
+  "timeout": 60
+}

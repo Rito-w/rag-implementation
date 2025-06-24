@@ -101,7 +101,7 @@ class Config:
             # Retriever settings
             "retrievers": {
                 "dense": {
-                    "model_name": "text-embedding-ada-002",
+                    "model_name": "sentence-transformers/all-MiniLM-L6-v2",
                     "max_docs": 100,
                     "similarity_threshold": 0.7
                 },
