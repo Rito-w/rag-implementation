@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "squad_0",
+    "query": "To whom did the Virgin Mary allegedly appear in 1858 in Lourdes France?",
+    "type": "factual",
+    "answer": "Saint Bernadette Soubirous"
+  },
+  {
+    "id": "squad_1",
+    "query": "What is in front of the Notre Dame Main Building?",
+    "type": "factual",
+    "answer": "a copper statue of Christ"
+  },
+  {
+    "id": "squad_2",
+    "query": "The Basilica of the Sacred heart at Notre Dame is beside to which structure?",
+    "type": "factual",
+    "answer": "the Main Building"
+  },
+  {
+    "id": "squad_3",
+    "query": "What is the Grotto at Notre Dame?",
+    "type": "factual",
+    "answer": "a Marian place of prayer and reflection"
+  },
+  {
+    "id": "squad_4",
+    "query": "What sits on top of the Main Building at Notre Dame?",
+    "type": "factual",
+    "answer": "a golden statue of the Virgin Mary"
+  },
+  {
+    "id": "squad_5",
+    "query": "When did the Scholastic Magazine of Notre dame begin publishing?",
+    "type": "factual",
+    "answer": "September 1876"
+  },
+  {
+    "id": "squad_6",
+    "query": "How often is Notre Dame's the Juggler published?",
+    "type": "factual",
+    "answer": "twice"
+  },
+  {
+    "id": "squad_7",
+    "query": "What is the daily student paper at Notre Dame called?",
+    "type": "factual",
+    "answer": "The Observer"
+  },
+  {
+    "id": "squad_8",
+    "query": "How many student news papers are found at Notre Dame?",
+    "type": "factual",
+    "answer": "three"
+  },
+  {
+    "id": "squad_9",
+    "query": "In what year did the student paper Common Sense begin publication at Notre Dame?",
+    "type": "factual",
+    "answer": "1987"
+  },
+  {
+    "id": "squad_10",
+    "query": "Where is the headquarters of the Congregation of the Holy Cross?",
+    "type": "factual",
+    "answer": "Rome"
+  },
+  {
+    "id": "squad_11",
+    "query": "What is the primary seminary of the Congregation of the Holy Cross?",
+    "type": "factual",
+    "answer": "Moreau Seminary"
+  },
+  {
+    "id": "squad_12",
+    "query": "What is the oldest structure at Notre Dame?",
+    "type": "factual",
+    "answer": "Old College"
+  },
+  {
+    "id": "squad_13",
+    "query": "What individuals live at Fatima House at Notre Dame?",
+    "type": "factual",
+    "answer": "Retired priests and brothers"
+  },
+  {
+    "id": "squad_14",
+    "query": "Which prize did Frederick Buechner create?",
+    "type": "factual",
+    "answer": "Buechner Prize for Preaching"
+  },
+  {
+    "id": "squad_15",
+    "query": "How many BS level degrees are offered in the College of Engineering at Notre Dame?",
+    "type": "factual",
+    "answer": "eight"
+  },
+  {
+    "id": "squad_16",
+    "query": "In what year was the College of Engineering at Notre Dame formed?",
+    "type": "factual",
+    "answer": "1920"
+  },
+  {
+    "id": "squad_17",
+    "query": "Before the creation of the College of Engineering similar studies were carried out at which Notre Dame college?",
+    "type": "factual",
+    "answer": "the College of Science"
+  },
+  {
+    "id": "squad_18",
+    "query": "How many departments are within the Stinson-Remick Hall of Engineering?",
+    "type": "factual",
+    "answer": "five"
+  },
+  {
+    "id": "squad_19",
+    "query": "The College of Science began to offer civil engineering courses beginning at what time at Notre Dame?",
+    "type": "factual",
+    "answer": "the 1870s"
+  },
+  {
+    "id": "squad_20",
+    "query": "What entity provides help with the management of time for new students at Notre Dame?",
+    "type": "factual",
+    "answer": "Learning Resource Center"
+  },
+  {
+    "id": "squad_21",
+    "query": "How many colleges for undergraduates are at Notre Dame?",
+    "type": "factual",
+    "answer": "five"
+  },
+  {
+    "id": "squad_22",
+    "query": "What was created at Notre Dame in 1962 to assist first year students?",
+    "type": "factual",
+    "answer": "The First Year of Studies program"
+  },
+  {
+    "id": "squad_23",
+    "query": "Which organization declared the First Year of Studies program at Notre Dame \"outstanding?\"",
+    "type": "factual",
+    "answer": "U.S. News & World Report"
+  },
+  {
+    "id": "squad_24",
+    "query": "The granting of Doctorate degrees first occurred in what year at Notre Dame?",
+    "type": "factual",
+    "answer": "1924"
+  },
+  {
+    "id": "squad_25",
+    "query": "What type of degree is an M.Div.?",
+    "type": "factual",
+    "answer": "Master of Divinity"
+  },
+  {
+    "id": "squad_26",
+    "query": "Which program at Notre Dame offers a Master of Education degree?",
+    "type": "factual",
+    "answer": "Alliance for Catholic Education"
+  },
+  {
+    "id": "squad_27",
+    "query": "In what year was a Master of Arts course first offered at Notre Dame?",
+    "type": "factual",
+    "answer": "1854"
+  },
+  {
+    "id": "squad_28",
+    "query": "Which department at Notre Dame is the only one to not offer a PhD program?",
+    "type": "factual",
+    "answer": "Department of Pre-Professional Studies"
+  },
+  {
+    "id": "squad_29",
+    "query": "What institute at Notre Dame studies  the reasons for violent conflict?",
+    "type": "factual",
+    "answer": "Joan B. Kroc Institute for International Peace Studies"
+  },
+  {
+    "id": "squad_30",
+    "query": "What is the title of Notre Dame's Theodore Hesburgh?",
+    "type": "factual",
+    "answer": "President Emeritus of the University of Notre Dame"
+  },
+  {
+    "id": "squad_31",
+    "query": "In what year was the Joan B. Kroc Institute for International Peace Studies founded?",
+    "type": "factual",
+    "answer": "1986"
+  },
+  {
+    "id": "squad_32",
+    "query": "To whom was John B. Kroc married?",
+    "type": "factual",
+    "answer": "Ray Kroc"
+  },
+  {
+    "id": "squad_33",
+    "query": "What company did Ray Kroc own?",
+    "type": "factual",
+    "answer": "McDonald's"
+  },
+  {
+    "id": "squad_34",
+    "query": "How many stories tall is the main library at Notre Dame?",
+    "type": "factual",
+    "answer": "14"
+  },
+  {
+    "id": "squad_35",
+    "query": "What is the name of the main library at Notre Dame?",
+    "type": "factual",
+    "answer": "Theodore M. Hesburgh Library"
+  },
+  {
+    "id": "squad_36",
+    "query": "In what year was the Theodore M. Hesburgh Library at Notre Dame finished?",
+    "type": "factual",
+    "answer": "1963"
+  },
+  {
+    "id": "squad_37",
+    "query": "Which artist created the mural on the Theodore M. Hesburgh Library?",
+    "type": "factual",
+    "answer": "Millard Sheets"
+  },
+  {
+    "id": "squad_38",
+    "query": "What is a common name to reference the mural created by Millard Sheets at Notre Dame?",
+    "type": "factual",
+    "answer": "Touchdown Jesus"
+  },
+  {
+    "id": "squad_39",
+    "query": "How many incoming students did Notre Dame admit in fall 2015?",
+    "type": "factual",
+    "answer": "3,577"
+  },
+  {
+    "id": "squad_40",
+    "query": "What percentage of students were admitted to Notre Dame in fall 2015?",
+    "type": "factual",
+    "answer": "19.7%"
+  },
+  {
+    "id": "squad_41",
+    "query": "Where does Notre Dame rank in terms of academic profile among research universities in the US?",
+    "type": "factual",
+    "answer": "the top 10 to 15 in the nation"
+  },
+  {
+    "id": "squad_42",
+    "query": "What percentage of students at Notre Dame participated in the Early Action program?",
+    "type": "factual",
+    "answer": "39.1%"
+  },
+  {
+    "id": "squad_43",
+    "query": "How many miles does the average student at Notre Dame travel to study there?",
+    "type": "factual",
+    "answer": "more than 750 miles"
+  },
+  {
+    "id": "squad_44",
+    "query": "Where did U.S. News & World Report rank Notre Dame in its 2015-2016 university rankings?",
+    "type": "factual",
+    "answer": "18th overall"
+  },
+  {
+    "id": "squad_45",
+    "query": "Forbes.com placed Notre Dame at what position compared to other US research universities?",
+    "type": "factual",
+    "answer": "8th"
+  },
+  {
+    "id": "squad_46",
+    "query": "The undergrad school at the Mendoza College of Business was ranked where according to BusinessWeek?",
+    "type": "factual",
+    "answer": "1st overall"
+  },
+  {
+    "id": "squad_47",
+    "query": "In 2014 what entity named Notre Dame 10th best of all American universities?",
+    "type": "factual",
+    "answer": "USA Today"
+  },
+  {
+    "id": "squad_48",
+    "query": "What percentage of Notre Dame students decide to study abroad?",
+    "type": "factual",
+    "answer": "57.6%"
+  },
+  {
+    "id": "squad_49",
+    "query": "What person was the Director of the Science Museum at Notre Dame in the late 19th century?",
+    "type": "factual",
+    "answer": "Father Joseph Carrier, C.S.C."
+  },
+  {
+    "id": "squad_50",
+    "query": "What was the lifespan of John Augustine Zahm?",
+    "type": "factual",
+    "answer": "1851–1921"
+  },
+  {
+    "id": "squad_51",
+    "query": "What program did John Augustine Zahm come to co-direct at Nore Dame?",
+    "type": "factual",
+    "answer": "the Science Department"
+  },
+  {
+    "id": "squad_52",
+    "query": "What book did John Zahm write in 1896?",
+    "type": "factual",
+    "answer": "Evolution and Dogma"
+  },
+  {
+    "id": "squad_53",
+    "query": "What professorship did Father Josh Carrier hold at Notre Dame?",
+    "type": "factual",
+    "answer": "Professor of Chemistry and Physics"
+  },
+  {
+    "id": "squad_54",
+    "query": "In what year did Albert Zahm begin comparing aeronatical models at Notre Dame?",
+    "type": "factual",
+    "answer": "1882"
+  },
+  {
+    "id": "squad_55",
+    "query": "Which professor sent the first wireless message in the USA?",
+    "type": "factual",
+    "answer": "Professor Jerome Green"
+  },
+  {
+    "id": "squad_56",
+    "query": "In what year did Jerome Green send his first wireless message?",
+    "type": "factual",
+    "answer": "Around 1899"
+  },
+  {
+    "id": "squad_57",
+    "query": "Which individual worked on projects at Notre Dame that eventually created neoprene?",
+    "type": "factual",
+    "answer": "Father Julius Nieuwland"
+  },
+  {
+    "id": "squad_58",
+    "query": "What did the brother of John Zahm construct at Notre Dame?",
+    "type": "factual",
+    "answer": "an early wind tunnel"
+  },
+  {
+    "id": "squad_59",
+    "query": "Work on a germ-free-life ended up in the creation of which Notre Dame institute?",
+    "type": "factual",
+    "answer": "The Lobund Institute"
+  },
+  {
+    "id": "squad_60",
+    "query": "Around what time did Lobund of Notre Dame become independent?",
+    "type": "factual",
+    "answer": "the 1940s"
+  },
+  {
+    "id": "squad_61",
+    "query": "In what year did Lobund at Notre Dame become an Institute?",
+    "type": "factual",
+    "answer": "1950"
+  },
+  {
+    "id": "squad_62",
+    "query": "The Lobund Institute was merged into the Department of Biology at Notre Dame in what year?",
+    "type": "factual",
+    "answer": "1958"
+  },
+  {
+    "id": "squad_63",
+    "query": "When did study of a germ-free-life begin at Notre Dame?",
+    "type": "factual",
+    "answer": "1928"
+  },
+  {
+    "id": "squad_64",
+    "query": "Gurian created what in 1939 at Notre Dame?",
+    "type": "factual",
+    "answer": "The Review of Politics"
+  },
+  {
+    "id": "squad_65",
+    "query": "What was the Review of Politics inspired by?",
+    "type": "factual",
+    "answer": "German Catholic journals"
+  },
+  {
+    "id": "squad_66",
+    "query": "Over how many years did Gurian edit the Review of Politics at Notre Dame?",
+    "type": "factual",
+    "answer": "44"
+  },
+  {
+    "id": "squad_67",
+    "query": "Thomas Stritch was an editor of which publican from Notre Dame?",
+    "type": "factual",
+    "answer": "Review of Politics"
+  },
+  {
+    "id": "squad_68",
+    "query": "Who was the president of Notre Dame in 2012?",
+    "type": "factual",
+    "answer": "John Jenkins"
+  },
+  {
+    "id": "squad_69",
+    "query": "The Kellogg Institute for International Studies is part of which university?",
+    "type": "factual",
+    "answer": "Notre Dame"
+  },
+  {
+    "id": "squad_70",
+    "query": "What does the Kroc Institute at Notre Dame focus on?",
+    "type": "factual",
+    "answer": "International Peace studies"
+  },
+  {
+    "id": "squad_71",
+    "query": "In what year did Notre Dame begin to host the Global Adaptation Index?",
+    "type": "factual",
+    "answer": "2013"
+  },
+  {
+    "id": "squad_72",
+    "query": "What threat does the Global Adaptation Index study?",
+    "type": "factual",
+    "answer": "climate change"
+  },
+  {
+    "id": "squad_73",
+    "query": "How many undergrads were attending Notre Dame in 2014?",
+    "type": "factual",
+    "answer": "8,448"
+  },
+  {
+    "id": "squad_74",
+    "query": "What percentage of students at Notre Dame are the children of former Notre Dame students?",
+    "type": "factual",
+    "answer": "21–24%"
+  },
+  {
+    "id": "squad_75",
+    "query": "How many teams participate in the Notre Dame Bookstore Basketball tournament?",
+    "type": "factual",
+    "answer": "over 700"
+  },
+  {
+    "id": "squad_76",
+    "query": "For what cause is money raised at the Bengal Bouts tournament at Notre Dame?",
+    "type": "factual",
+    "answer": "the Holy Cross Missions in Bangladesh"
+  },
+  {
+    "id": "squad_77",
+    "query": "How many students in total were at Notre Dame in 2014?",
+    "type": "factual",
+    "answer": "12,179"
+  },
+  {
+    "id": "squad_78",
+    "query": "What percentage of undergrads live on the Notre Dame campus?",
+    "type": "factual",
+    "answer": "80%"
+  },
+  {
+    "id": "squad_79",
+    "query": "How many student housing areas are reserved for Notre Dame's graduate students?",
+    "type": "factual",
+    "answer": "four"
+  },
+  {
+    "id": "squad_80",
+    "query": "How many dorms for males are on the Notre Dame campus?",
+    "type": "factual",
+    "answer": "15"
+  },
+  {
+    "id": "squad_81",
+    "query": "What amount of the graduate student body at Notre Dame live on the campus?",
+    "type": "factual",
+    "answer": "20%"
+  },
+  {
+    "id": "squad_82",
+    "query": "There are how many dorms for females at Notre Dame?",
+    "type": "factual",
+    "answer": "14"
+  },
+  {
+    "id": "squad_83",
+    "query": "What is Congregation of Holy Cross in Latin?",
+    "type": "factual",
+    "answer": "Congregatio a Sancta Cruce"
+  },
+  {
+    "id": "squad_84",
+    "query": "What percentage of Notre Dame students feel they are Christian?",
+    "type": "factual",
+    "answer": "more than 93%"
+  },
+  {
+    "id": "squad_85",
+    "query": "How often is Catholic mass held at Notre Dame in a week?",
+    "type": "factual",
+    "answer": "over 100 times"
+  },
+  {
+    "id": "squad_86",
+    "query": "How many chapels are on the Notre Dame campus?",
+    "type": "factual",
+    "answer": "Fifty-seven"
+  },
+  {
+    "id": "squad_87",
+    "query": "What amount of the student body of Notre Dame identifies as Catholic?",
+    "type": "factual",
+    "answer": "over 80%"
+  },
+  {
+    "id": "squad_88",
+    "query": "What was the music hall at Notre Dame called?",
+    "type": "factual",
+    "answer": "Washington Hall"
+  },
+  {
+    "id": "squad_89",
+    "query": "In what year was the Main Building at Notre Dame razed in a fire?",
+    "type": "factual",
+    "answer": "1879"
+  },
+  {
+    "id": "squad_90",
+    "query": "Who was the president of Notre Dame in 1879?",
+    "type": "factual",
+    "answer": "Rev. William Corby"
+  },
+  {
+    "id": "squad_91",
+    "query": "On what date was the rebuilding of The Main Building begun at Notre Dame after the fire that claimed the previous?",
+    "type": "factual",
+    "answer": "17th of May"
+  },
+  {
+    "id": "squad_92",
+    "query": "What did the Science Hall at Notre Dame come to be known as?",
+    "type": "factual",
+    "answer": "LaFortune Student Center"
+  },
+  {
+    "id": "squad_93",
+    "query": "What type of education was pushed at Notre Dame before its embracing of national standards?",
+    "type": "factual",
+    "answer": "scholastic and classical"
+  },
+  {
+    "id": "squad_94",
+    "query": "Which college did Notre Dame add in 1921?",
+    "type": "factual",
+    "answer": "College of Commerce"
+  },
+  {
+    "id": "squad_95",
+    "query": "In 1919 a new president of Notre Dame was named, who was it?",
+    "type": "factual",
+    "answer": "Father James Burns"
+  },
+  {
+    "id": "squad_96",
+    "query": "Over how many years did the change to national standards undertaken at Notre Dame in the early 20th century take place?",
+    "type": "factual",
+    "answer": "three years"
+  },
+  {
+    "id": "squad_97",
+    "query": "Those who attended a Jesuit college may have been forbidden from joining which Law School due to the curricula at the Jesuit institution?",
+    "type": "factual",
+    "answer": "Harvard Law School"
+  },
+  {
+    "id": "squad_98",
+    "query": "The Notre Dame football team got a new head coach in 1918, who was it?",
+    "type": "factual",
+    "answer": "Knute Rockne"
+  },
+  {
+    "id": "squad_99",
+    "query": "What was the amount of wins Knute Rockne attained at Notre Dame while head coach?",
+    "type": "factual",
+    "answer": "105"
+  },
+  {
+    "id": "squad_100",
+    "query": "In what year did the team lead by Knute Rockne win the Rose Bowl?",
+    "type": "factual",
+    "answer": "1925"
+  },
+  {
+    "id": "squad_101",
+    "query": "How many years was Knute Rockne head coach at Notre Dame?",
+    "type": "factual",
+    "answer": "13"
+  },
+  {
+    "id": "squad_102",
+    "query": "How many national titles were won when Knute Rockne coached at Notre Dame?",
+    "type": "factual",
+    "answer": "three"
+  },
+  {
+    "id": "squad_103",
+    "query": "Catholic people identified with Notre Dame, what religious group did people feel Yale represented?",
+    "type": "factual",
+    "answer": "the Protestant establishment"
+  },
+  {
+    "id": "squad_104",
+    "query": "Notre Dame students had a showdown in 1924 with which anti-catholic group?",
+    "type": "factual",
+    "answer": "the Ku Klux Klan"
+  },
+  {
+    "id": "squad_105",
+    "query": "Which college president of Notre Dame is credited with preventing more confrontations between students and the KKK?",
+    "type": "factual",
+    "answer": "Fr. Matthew Walsh"
+  },
+  {
+    "id": "squad_106",
+    "query": "What type of event did the Klan intend to have at Notre Dame in March of 1924?",
+    "type": "factual",
+    "answer": "a week-long Klavern"
+  },
+  {
+    "id": "squad_107",
+    "query": "Where did Notre Dame students and the KKK have their encounter?",
+    "type": "factual",
+    "answer": "South Bend"
+  },
+  {
+    "id": "squad_108",
+    "query": "Which person became vice-president of Notre Dame in 1933?",
+    "type": "factual",
+    "answer": "Father John Francis O'Hara"
+  },
+  {
+    "id": "squad_109",
+    "query": "Who was the president of Notre Dame in 1934?",
+    "type": "factual",
+    "answer": "Father John Francis O'Hara"
+  },
+  {
+    "id": "squad_110",
+    "query": "Irvin Abell was given what award by Notre Dame?",
+    "type": "factual",
+    "answer": "Laetare Medal"
+  },
+  {
+    "id": "squad_111",
+    "query": "Which year was the Laetare Medal first given out at Notre Dame?",
+    "type": "factual",
+    "answer": "1883"
+  },
+  {
+    "id": "squad_112",
+    "query": "For whos glory did Father O'Hara believed that the Notre Dame football team played?",
+    "type": "factual",
+    "answer": "God"
+  },
+  {
+    "id": "squad_113",
+    "query": "Around the time that Rev. Cavanaugh became president of Notre Dame by how much did the undergrad student body of Notre Dame increase?",
+    "type": "factual",
+    "answer": "more than half"
+  },
+  {
+    "id": "squad_114",
+    "query": "Which institute involving animal life did Cavanaugh create at Notre Dame?",
+    "type": "factual",
+    "answer": "Lobund Institute for Animal Studies"
+  },
+  {
+    "id": "squad_115",
+    "query": "What is O'Shaughnessy Hall of Notre Dame formerly known as?",
+    "type": "factual",
+    "answer": "Hall of Liberal Arts"
+  },
+  {
+    "id": "squad_116",
+    "query": "Which president did Notre Dame have in 1947?",
+    "type": "factual",
+    "answer": "Rev. John J. Cavanaugh, C.S.C."
+  },
+  {
+    "id": "squad_117",
+    "query": "Outside of an institute studying animals, what other institute did Cavanugh create at Notre Dame?",
+    "type": "factual",
+    "answer": "Medieval Institute"
+  },
+  {
+    "id": "squad_118",
+    "query": "What was the lifespan of Theodore Hesburgh?",
+    "type": "factual",
+    "answer": "1917–2015"
+  },
+  {
+    "id": "squad_119",
+    "query": "In the time that Hesburgh was president of Notre Dame by what factor did the operating budget increase?",
+    "type": "factual",
+    "answer": "18"
+  },
+  {
+    "id": "squad_120",
+    "query": "What was the size of the Notre Dame endowment when Theodore Hesburgh became president?",
+    "type": "factual",
+    "answer": "$9 million"
+  },
+  {
+    "id": "squad_121",
+    "query": "During what years was Theodor Hesburgh president of Notre Dame?",
+    "type": "factual",
+    "answer": "1952–87"
+  },
+  {
+    "id": "squad_122",
+    "query": "How many faculty members were at Notre Dame when Hesburgh left the role of president?",
+    "type": "factual",
+    "answer": "950"
+  },
+  {
+    "id": "squad_123",
+    "query": "What type of educational institute is Hesburgh given credit for creating at Notre Dame?",
+    "type": "factual",
+    "answer": "coeducational"
+  },
+  {
+    "id": "squad_124",
+    "query": "Which role did Charles Sheedy have at Notre Dame?",
+    "type": "factual",
+    "answer": "Dean of Arts and Letters"
+  },
+  {
+    "id": "squad_125",
+    "query": "What title did Thomas Blantz have at Notre Dame?",
+    "type": "factual",
+    "answer": "Vice President of Student Affairs"
+  },
+  {
+    "id": "squad_126",
+    "query": "In what year did Notre Dame have its earliest undergraduate that was female?",
+    "type": "factual",
+    "answer": "1971"
+  },
+  {
+    "id": "squad_127",
+    "query": "With what institute did Notre Dame agree to an exchange program in the 1960s?",
+    "type": "factual",
+    "answer": "Saint Mary's College"
+  },
+  {
+    "id": "squad_128",
+    "query": "During what years was Edward Malloy president of Notre Dame?",
+    "type": "factual",
+    "answer": "1987–2005"
+  },
+  {
+    "id": "squad_129",
+    "query": "What was the SAT score, on average, at Notre Dame when Edward Malloy became president?",
+    "type": "factual",
+    "answer": "1240"
+  },
+  {
+    "id": "squad_130",
+    "query": "When Malloy became president of Notre Dame what was the size of the endowment?",
+    "type": "factual",
+    "answer": "$350 million"
+  },
+  {
+    "id": "squad_131",
+    "query": "When Malloy reached the end of his time as president how much annuals funding for research did Notre Dame have?",
+    "type": "factual",
+    "answer": "more than $70 million"
+  },
+  {
+    "id": "squad_132",
+    "query": "The amount of professors at Notre Dame increased by what amount under Malloy?",
+    "type": "factual",
+    "answer": "500"
+  },
+  {
+    "id": "squad_133",
+    "query": "When did John Jenkins become the president of Notre Dame?",
+    "type": "factual",
+    "answer": "2005"
+  },
+  {
+    "id": "squad_134",
+    "query": "In terms of the amount of presidents Notre Dame has had, where is John Jenkins on the list?",
+    "type": "factual",
+    "answer": "17th"
+  },
+  {
+    "id": "squad_135",
+    "query": "Who was the Notre Dame president that preceded John Jenkins?",
+    "type": "factual",
+    "answer": "Malloy"
+  },
+  {
+    "id": "squad_136",
+    "query": "Which arena was constructed under Jenkins at Notre Dame?",
+    "type": "factual",
+    "answer": "Compton Family Ice Arena"
+  },
+  {
+    "id": "squad_137",
+    "query": "How much money was spent on enhancing Notre Dame Stadium under John Jenkins?",
+    "type": "factual",
+    "answer": "$400m"
+  },
+  {
+    "id": "squad_138",
+    "query": "Which congregation is in charge of the Old College at Notre Dame?",
+    "type": "factual",
+    "answer": "Congregation of Holy Cross"
+  },
+  {
+    "id": "squad_139",
+    "query": "What structure is found on the location of the original church of Father Sorin at Notre Dame?",
+    "type": "factual",
+    "answer": "Basilica of the Sacred Heart"
+  },
+  {
+    "id": "squad_140",
+    "query": "In which architectural style is the Basilica of the Sacred Heart at Notre Dame made?",
+    "type": "factual",
+    "answer": "French Revival"
+  },
+  {
+    "id": "squad_141",
+    "query": "Which individual painted the inside of the Basilica of the Sacred Heart at Notre Dame?",
+    "type": "factual",
+    "answer": "Luigi Gregori"
+  },
+  {
+    "id": "squad_142",
+    "query": "In what year was the Grotto of Our Lady of Lourdes at Notre Dame constructed?",
+    "type": "factual",
+    "answer": "1896"
+  },
+  {
+    "id": "squad_143",
+    "query": "Which person oversaw the creation of a science hall at Notre Dame in 1883?",
+    "type": "factual",
+    "answer": "Fr. Zahm"
+  },
+  {
+    "id": "squad_144",
+    "query": "In what year did the student union building at Notre Dame get renamed to LaFortune Center?",
+    "type": "factual",
+    "answer": "1950"
+  },
+  {
+    "id": "squad_145",
+    "query": "After which individual was the LaFortune Center Notre Dame named?",
+    "type": "factual",
+    "answer": "Joseph LaFortune"
+  },
+  {
+    "id": "squad_146",
+    "query": "How large in square feet is the LaFortune Center at Notre Dame?",
+    "type": "factual",
+    "answer": "83,000 square feet"
+  },
+  {
+    "id": "squad_147",
+    "query": "What is the annual budget of Notre Dame's LaFortune Center?",
+    "type": "factual",
+    "answer": "$1.2 million"
+  },
+  {
+    "id": "squad_148",
+    "query": "How many halls are at Notre Dame that house students?",
+    "type": "factual",
+    "answer": "29"
+  },
+  {
+    "id": "squad_149",
+    "query": "Which library was built at Notre Dame in 1963?",
+    "type": "factual",
+    "answer": "Theodore Hesburgh Library"
+  },
+  {
+    "id": "squad_150",
+    "query": "How many books are housed at the Theodore Hesburgh Library?",
+    "type": "factual",
+    "answer": "almost 4 million"
+  },
+  {
+    "id": "squad_151",
+    "query": "Construction for which hall started on March 8th 2007 at Notre Dame?",
+    "type": "factual",
+    "answer": "Duncan Hall"
+  },
+  {
+    "id": "squad_152",
+    "query": "Which baseball stadium is found at Notre Dame?",
+    "type": "factual",
+    "answer": "Frank Eck Stadium"
+  },
+  {
+    "id": "squad_153",
+    "query": "In what year did Notre Dame create the Office of Sustainability?",
+    "type": "factual",
+    "answer": "2008"
+  },
+  {
+    "id": "squad_154",
+    "query": "What percentage of the food served at Notre Dame is locally grown?",
+    "type": "factual",
+    "answer": "40%"
+  },
+  {
+    "id": "squad_155",
+    "query": "Notre Dame got a \"B\" for its sustainability practices from which entity?",
+    "type": "factual",
+    "answer": "Sustainable Endowments Institute"
+  },
+  {
+    "id": "squad_156",
+    "query": "Gustavo Gutierrez is faculty of which institute?",
+    "type": "factual",
+    "answer": "Kroc Institute for International Peace Studies"
+  },
+  {
+    "id": "squad_157",
+    "query": "In what year did Notre Dame first have a facility in England?",
+    "type": "factual",
+    "answer": "1968"
+  },
+  {
+    "id": "squad_158",
+    "query": "At which location is the London Center operated by Notre Dame found?",
+    "type": "factual",
+    "answer": "1 Suffolk Street in Trafalgar Square"
+  },
+  {
+    "id": "squad_159",
+    "query": "Notre Dame has a center in Beijing, what is it referred to as?",
+    "type": "factual",
+    "answer": "Global Gateways"
+  },
+  {
+    "id": "squad_160",
+    "query": "In what year did the Suffolk Street location start to house a Notre Dame facility?",
+    "type": "factual",
+    "answer": "1998"
+  },
+  {
+    "id": "squad_161",
+    "query": "What was Notre Dame's first college?",
+    "type": "factual",
+    "answer": "The College of Arts and Letters"
+  },
+  {
+    "id": "squad_162",
+    "query": "In what year was the The College of Arts and Letters at Notre Dame created?",
+    "type": "factual",
+    "answer": "1842"
+  },
+  {
+    "id": "squad_163",
+    "query": "In what year did the College of Arts and Letters at Notre Dame grant its first degree?",
+    "type": "factual",
+    "answer": "1849"
+  },
+  {
+    "id": "squad_164",
+    "query": "On which university did Notre Dame base its curriculum on?",
+    "type": "factual",
+    "answer": "Saint Louis University"
+  },
+  {
+    "id": "squad_165",
+    "query": "How many BA majors does the College of Arts and Letters at Notre Dame offer?",
+    "type": "factual",
+    "answer": "33"
+  },
+  {
+    "id": "squad_166",
+    "query": "Which president at Notre Dame created the College of Science?",
+    "type": "factual",
+    "answer": "Father Patrick Dillon"
+  },
+  {
+    "id": "squad_167",
+    "query": "In what year was the Notre Dame College of Science formed?",
+    "type": "factual",
+    "answer": "1865"
+  },
+  {
+    "id": "squad_168",
+    "query": "How many years long was a scientific course under Patrick Dillon at Notre Dame?",
+    "type": "factual",
+    "answer": "six years"
+  },
+  {
+    "id": "squad_169",
+    "query": "Which hall at Notre Dame contains the current College of Science?",
+    "type": "factual",
+    "answer": "Jordan Hall of Science"
+  },
+  {
+    "id": "squad_170",
+    "query": "How many undergrad students attend the College of Science at Notre Dame today?",
+    "type": "factual",
+    "answer": "over 1,200"
+  },
+  {
+    "id": "squad_171",
+    "query": "In 1899 Notre Dame formed which college?",
+    "type": "factual",
+    "answer": "School of Architecture"
+  },
+  {
+    "id": "squad_172",
+    "query": "In what building is the current School of Architecture housed at Notre Dame?",
+    "type": "factual",
+    "answer": "Bond Hall"
+  },
+  {
+    "id": "squad_173",
+    "query": "What length is the course of study at the Notre Dame School of Architecture?",
+    "type": "factual",
+    "answer": "five-year"
+  },
+  {
+    "id": "squad_174",
+    "query": "In which location do students of the School of Architecture of Notre Dame spend their 3rd year?",
+    "type": "factual",
+    "answer": "Rome"
+  },
+  {
+    "id": "squad_175",
+    "query": "Which prestigious prize does the School of Architecture at Notre Dame give out?",
+    "type": "factual",
+    "answer": "Driehaus Architecture Prize"
+  },
+  {
+    "id": "squad_176",
+    "query": "In what year did the opening of a theology library at Notre Dame occur?",
+    "type": "factual",
+    "answer": "2015"
+  },
+  {
+    "id": "squad_177",
+    "query": "Where is the theology library at Notre Dame?",
+    "type": "factual",
+    "answer": "the first floor of Stanford Hall"
+  },
+  {
+    "id": "squad_178",
+    "query": "How many books are held by the Notre Dame libraries?",
+    "type": "factual",
+    "answer": "over three million volumes"
+  },
+  {
+    "id": "squad_179",
+    "query": "Currently where does Notre Dame's library rank in the nation?",
+    "type": "factual",
+    "answer": "one of the 100 largest"
+  },
+  {
+    "id": "squad_180",
+    "query": "What caused many intellectual Catholics to leave europe in the 1930s?",
+    "type": "factual",
+    "answer": "The rise of Hitler and other dictators"
+  },
+  {
+    "id": "squad_181",
+    "query": "From where did Anton-Hermann Chroust come to reach Notre Dame?",
+    "type": "factual",
+    "answer": "Germany"
+  },
+  {
+    "id": "squad_182",
+    "query": "What field of study did Anton-Hermann Chroust specialize in?",
+    "type": "factual",
+    "answer": "classics and law"
+  },
+  {
+    "id": "squad_183",
+    "query": "Who did Waldemar Gurian receive his tutelage under while seeking his doctorate?",
+    "type": "factual",
+    "answer": "Max Scheler"
+  },
+  {
+    "id": "squad_184",
+    "query": "What was Ivan Meštrović known for being?",
+    "type": "factual",
+    "answer": "a renowned sculptor"
+  },
+  {
+    "id": "squad_185",
+    "query": "The school known as Notre Dame is known by a more lengthy name, what is it?",
+    "type": "factual",
+    "answer": "University of Notre Dame du"
+  },
+  {
+    "id": "squad_186",
+    "query": "What type of institution is the Notre Dame?",
+    "type": "factual",
+    "answer": "Catholic research university"
+  },
+  {
+    "id": "squad_187",
+    "query": "The French words Notre Dame du Lac translate to what in English?",
+    "type": "factual",
+    "answer": "Our Lady of the Lake"
+  },
+  {
+    "id": "squad_188",
+    "query": "Who is the patron saint of Notre Dame?",
+    "type": "factual",
+    "answer": "the Virgin Mary"
+  },
+  {
+    "id": "squad_189",
+    "query": "How large is Notre Dame in acres?",
+    "type": "factual",
+    "answer": "1,250"
+  },
+  {
+    "id": "squad_190",
+    "query": "What caused Notre Dame to become notable in the early 20th century?",
+    "type": "factual",
+    "answer": "its Fighting Irish football team"
+  },
+  {
+    "id": "squad_191",
+    "query": "Which 20th century Notre Dame football coach is most notable?",
+    "type": "factual",
+    "answer": "Knute Rockne"
+  },
+  {
+    "id": "squad_192",
+    "query": "Which athletic association are the student athletes at Notre Dame a part of?",
+    "type": "factual",
+    "answer": "NCAA Division I"
+  },
+  {
+    "id": "squad_193",
+    "query": "How many students at Notre Dame received the Heisman Trophy?",
+    "type": "factual",
+    "answer": "seven"
+  },
+  {
+    "id": "squad_194",
+    "query": "There were multiple students from Notre Dame who entered the Pro Football Hall of Fame, how many?",
+    "type": "factual",
+    "answer": "13"
+  },
+  {
+    "id": "squad_195",
+    "query": "Where among US universities does Notre Dame rank?",
+    "type": "factual",
+    "answer": "among the top twenty"
+  },
+  {
+    "id": "squad_196",
+    "query": "How many individual colleges are part of Notre Dame?",
+    "type": "factual",
+    "answer": "four"
+  },
+  {
+    "id": "squad_197",
+    "query": "Which prize does the Architecture School at Notre Dame give out?",
+    "type": "factual",
+    "answer": "Driehaus Architecture Prize"
+  },
+  {
+    "id": "squad_198",
+    "query": "How many doctorate and masters programs are available at Notre Dame?",
+    "type": "factual",
+    "answer": "more than 50"
+  },
+  {
+    "id": "squad_199",
+    "query": "Which art museum does Notre Dame administer?",
+    "type": "factual",
+    "answer": "Snite Museum of Art"
+  }
+]

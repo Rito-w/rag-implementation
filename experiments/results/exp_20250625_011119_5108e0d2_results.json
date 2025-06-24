@@ -1,0 +1,143 @@
+{
+  "experiment_id": "exp_20250625_011119_5108e0d2",
+  "start_time": "2025-06-25T01:11:19.402888",
+  "config": {
+    "datasets": [
+      "samples",
+      "squad",
+      "synthetic"
+    ],
+    "systems": [
+      "intelligent_rag"
+    ],
+    "metrics": [
+      "retrieval_quality",
+      "answer_quality",
+      "efficiency"
+    ],
+    "sample_size": 20,
+    "repetitions": 1,
+    "timeout": 30
+  },
+  "results": {
+    "samples": {
+      "intelligent_rag": {
+        "system_name": "intelligent_rag",
+        "total_queries": 5,
+        "successful_queries": 5,
+        "query_results": [
+          {
+            "query_id": "1",
+            "query_text": "What is machine learning?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...\n\n根据相关文档2：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.5888854609272501,
+            "processing_time": 0.019103050231933594,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.5868566176470589,
+              "type": "local_factual",
+              "confidence": 0.5704227941176471
+            },
+            "weight_allocation": {
+              "dense": 0.17068112514256212,
+              "sparse": 0.6605097631304727,
+              "hybrid": 0.16880911172696514,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "2",
+            "query_text": "How do neural networks work?",
+            "query_type": "technical",
+            "answer": "根据相关文档1：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.4496200494885903,
+            "processing_time": 0.01337289810180664,
+            "retrieval_results": 1,
+            "query_analysis": {
+              "complexity": 1.3851307189542483,
+              "type": "local_factual",
+              "confidence": 0.5462156862745098
+            },
+            "weight_allocation": {
+              "dense": 0.10436238999568352,
+              "sparse": 0.7462508831844503,
+              "hybrid": 0.1493867268198661,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "3",
+            "query_text": "Compare supervised and unsupervised learning",
+            "query_type": "comparison",
+            "answer": "根据相关文档1：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...\n\n根据相关文档2：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.603081242358848,
+            "processing_time": 0.012258052825927734,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.470735294117647,
+              "type": "local_factual",
+              "confidence": 0.6164882352941177
+            },
+            "weight_allocation": {
+              "dense": 0.10166188931618275,
+              "sparse": 0.7466414417019076,
+              "hybrid": 0.1516966689819098,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "4",
+            "query_text": "What are the applications of deep learning?",
+            "query_type": "application",
+            "answer": "根据相关文档1：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...\n\n根据相关文档2：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...",
+            "confidence": 0.6214041310535885,
+            "processing_time": 0.010873079299926758,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.7721796218487396,
+              "type": "local_factual",
+              "confidence": 0.6526615546218487
+            },
+            "weight_allocation": {
+              "dense": 0.17010213838732366,
+              "sparse": 0.6645932177975663,
+              "hybrid": 0.16530464381510995,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "5",
+            "query_text": "Explain the transformer architecture",
+            "query_type": "detailed",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.009387731552124023,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.5761764705882353,
+              "type": "local_factual",
+              "confidence": 0.5691411764705883
+            },
+            "weight_allocation": {
+              "dense": 0.1646782703457736,
+              "sparse": 0.6587618207627518,
+              "hybrid": 0.1765599088914745,
+              "strategy": "precision_focused"
+            }
+          }
+        ],
+        "system_stats": {
+          "avg_confidence": 0.4525981767656554,
+          "avg_processing_time": 0.01299896240234375,
+          "avg_complexity": 1.5582157446311857,
+          "total_processing_time": 0.06499481201171875,
+          "throughput": 76.92921704425402,
+          "success_rate": 1.0
+        }
+      }
+    }
+  },
+  "end_time": "2025-06-25T01:11:19.654932",
+  "duration": 0.252044
+}

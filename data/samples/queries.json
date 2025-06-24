@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "query": "What is machine learning?",
+    "type": "factual"
+  },
+  {
+    "id": "2",
+    "query": "How do neural networks work?",
+    "type": "technical"
+  },
+  {
+    "id": "3",
+    "query": "Compare supervised and unsupervised learning",
+    "type": "comparison"
+  },
+  {
+    "id": "4",
+    "query": "What are the applications of deep learning?",
+    "type": "application"
+  },
+  {
+    "id": "5",
+    "query": "Explain the transformer architecture",
+    "type": "detailed"
+  }
+]

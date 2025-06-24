@@ -1,0 +1,977 @@
+{
+  "experiment_id": "exp_20250625_011155_fdf08321",
+  "start_time": "2025-06-25T01:11:55.817394",
+  "config": {
+    "datasets": [
+      "samples",
+      "squad",
+      "synthetic"
+    ],
+    "systems": [
+      "intelligent_rag"
+    ],
+    "metrics": [
+      "retrieval_quality",
+      "answer_quality",
+      "efficiency"
+    ],
+    "sample_size": 20,
+    "repetitions": 1,
+    "timeout": 30
+  },
+  "results": {
+    "samples": {
+      "intelligent_rag": {
+        "system_name": "intelligent_rag",
+        "total_queries": 5,
+        "successful_queries": 5,
+        "query_results": [
+          {
+            "query_id": "1",
+            "query_text": "What is machine learning?",
+            "query_type": "factual",
+            "answer": "根据相关文档1：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...\n\n根据相关文档2：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.5849511583891263,
+            "processing_time": 0.02038407325744629,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.5868566176470589,
+              "type": "local_factual",
+              "confidence": 0.5704227941176471
+            },
+            "weight_allocation": {
+              "dense": 0.13608227350044222,
+              "sparse": 0.5256742402194476,
+              "hybrid": 0.33824348628011014,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "2",
+            "query_text": "How do neural networks work?",
+            "query_type": "technical",
+            "answer": "根据相关文档1：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.4484591085272451,
+            "processing_time": 0.012657880783081055,
+            "retrieval_results": 1,
+            "query_analysis": {
+              "complexity": 1.3851307189542483,
+              "type": "local_factual",
+              "confidence": 0.5462156862745098
+            },
+            "weight_allocation": {
+              "dense": 0.08343360177130311,
+              "sparse": 0.6165845574836281,
+              "hybrid": 0.2999818407450688,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "3",
+            "query_text": "Compare supervised and unsupervised learning",
+            "query_type": "comparison",
+            "answer": "根据相关文档1：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...\n\n根据相关文档2：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.601767800017635,
+            "processing_time": 0.017704010009765625,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.470735294117647,
+              "type": "local_factual",
+              "confidence": 0.6164882352941177
+            },
+            "weight_allocation": {
+              "dense": 0.0793327286844085,
+              "sparse": 0.6226788667151884,
+              "hybrid": 0.29798840460040316,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "4",
+            "query_text": "What are the applications of deep learning?",
+            "query_type": "application",
+            "answer": "根据相关文档1：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...\n\n根据相关文档2：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...",
+            "confidence": 0.61700220762456,
+            "processing_time": 0.04251503944396973,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.7721796218487396,
+              "type": "local_factual",
+              "confidence": 0.6526615546218487
+            },
+            "weight_allocation": {
+              "dense": 0.12871528360965104,
+              "sparse": 0.5259008180125614,
+              "hybrid": 0.34538389837778755,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "5",
+            "query_text": "Explain the transformer architecture",
+            "query_type": "detailed",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.011424064636230469,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.5761764705882353,
+              "type": "local_factual",
+              "confidence": 0.5691411764705883
+            },
+            "weight_allocation": {
+              "dense": 0.12661780605909528,
+              "sparse": 0.5485477994116126,
+              "hybrid": 0.3248343945292922,
+              "strategy": "precision_focused"
+            }
+          }
+        ],
+        "system_stats": {
+          "avg_confidence": 0.45043605491171324,
+          "avg_processing_time": 0.020937013626098632,
+          "avg_complexity": 1.5582157446311857,
+          "total_processing_time": 0.10468506813049316,
+          "throughput": 47.76230353852706,
+          "success_rate": 1.0
+        }
+      }
+    },
+    "squad": {
+      "intelligent_rag": {
+        "system_name": "intelligent_rag",
+        "total_queries": 20,
+        "successful_queries": 20,
+        "query_results": [
+          {
+            "query_id": "squad_0",
+            "query_text": "To whom did the Virgin Mary allegedly appear in 1858 in Lourdes France?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.018468141555786133,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.983392722473605,
+              "type": "local_factual",
+              "confidence": 0.7380071266968327
+            },
+            "weight_allocation": {
+              "dense": 0.15258798047391883,
+              "sparse": 0.6431365375694938,
+              "hybrid": 0.20427548195658743,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_1",
+            "query_text": "What is in front of the Notre Dame Main Building?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.014403104782104492,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.6414705882352942,
+              "type": "local_factual",
+              "confidence": 0.6969764705882353
+            },
+            "weight_allocation": {
+              "dense": 0.11250334866955157,
+              "sparse": 0.6670168850995654,
+              "hybrid": 0.2204797662308831,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_2",
+            "query_text": "The Basilica of the Sacred heart at Notre Dame is beside to which structure?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.01642012596130371,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.9171699929971988,
+              "type": "local_factual",
+              "confidence": 0.7300603991596639
+            },
+            "weight_allocation": {
+              "dense": 0.1450324650137326,
+              "sparse": 0.6457532097264779,
+              "hybrid": 0.20921432525978956,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_3",
+            "query_text": "What is the Grotto at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.013038158416748047,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.7385486694677872,
+              "type": "local_factual",
+              "confidence": 0.6486258403361345
+            },
+            "weight_allocation": {
+              "dense": 0.11795342623776693,
+              "sparse": 0.6693882086275695,
+              "hybrid": 0.2126583651346635,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_4",
+            "query_text": "What sits on top of the Main Building at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.013813018798828125,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.040372103386809,
+              "type": "local_factual",
+              "confidence": 0.7448446524064171
+            },
+            "weight_allocation": {
+              "dense": 0.10625020357410447,
+              "sparse": 0.6031284535071219,
+              "hybrid": 0.2906213429187737,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_5",
+            "query_text": "When did the Scholastic Magazine of Notre dame begin publishing?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.013949871063232422,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.017175245098039,
+              "type": "local_factual",
+              "confidence": 0.7420610294117647
+            },
+            "weight_allocation": {
+              "dense": 0.1261877621069092,
+              "sparse": 0.5865343430437362,
+              "hybrid": 0.2872778948493547,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_6",
+            "query_text": "How often is Notre Dame's the Juggler published?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.012413263320922852,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.6960539215686274,
+              "type": "local_factual",
+              "confidence": 0.7035264705882354
+            },
+            "weight_allocation": {
+              "dense": 0.12846570186701864,
+              "sparse": 0.6564054915655149,
+              "hybrid": 0.21512880656746644,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_7",
+            "query_text": "What is the daily student paper at Notre Dame called?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.013539791107177734,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.040612745098039,
+              "type": "local_factual",
+              "confidence": 0.7448735294117648
+            },
+            "weight_allocation": {
+              "dense": 0.11729595338329112,
+              "sparse": 0.5991493008928189,
+              "hybrid": 0.28355474572388994,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_8",
+            "query_text": "How many student news papers are found at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.013957738876342773,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.5885539215686275,
+              "type": "local_factual",
+              "confidence": 0.6906264705882352
+            },
+            "weight_allocation": {
+              "dense": 0.14244620536851343,
+              "sparse": 0.6474966958532665,
+              "hybrid": 0.21005709877822,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_9",
+            "query_text": "In what year did the student paper Common Sense begin publication at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.016861915588378906,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.9984199929971989,
+              "type": "local_factual",
+              "confidence": 0.7398103991596638
+            },
+            "weight_allocation": {
+              "dense": 0.15461759410504158,
+              "sparse": 0.6411605213101044,
+              "hybrid": 0.20422188458485388,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_10",
+            "query_text": "Where is the headquarters of the Congregation of the Holy Cross?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.017562150955200195,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.5849799465240642,
+              "type": "local_factual",
+              "confidence": 0.6901975935828877
+            },
+            "weight_allocation": {
+              "dense": 0.12221444770750278,
+              "sparse": 0.6590691140161821,
+              "hybrid": 0.21871643827631518,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_11",
+            "query_text": "What is the primary seminary of the Congregation of the Holy Cross?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.020040035247802734,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.6152205882352941,
+              "type": "local_factual",
+              "confidence": 0.6938264705882353
+            },
+            "weight_allocation": {
+              "dense": 0.12416511405762784,
+              "sparse": 0.65765767897265,
+              "hybrid": 0.21817720696972215,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_12",
+            "query_text": "What is the oldest structure at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.024860143661499023,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.8526164215686272,
+              "type": "local_factual",
+              "confidence": 0.7223139705882353
+            },
+            "weight_allocation": {
+              "dense": 0.12614560944054468,
+              "sparse": 0.6607289519583611,
+              "hybrid": 0.21312543860109406,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_13",
+            "query_text": "What individuals live at Fatima House at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.014903783798217773,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.8490196078431373,
+              "type": "local_factual",
+              "confidence": 0.7218823529411764
+            },
+            "weight_allocation": {
+              "dense": 0.14678435066581486,
+              "sparse": 0.6491149336890015,
+              "hybrid": 0.2041007156451835,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_14",
+            "query_text": "Which prize did Frederick Buechner create?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.010659933090209961,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.4764154411764707,
+              "type": "local_factual",
+              "confidence": 0.6771698529411765
+            },
+            "weight_allocation": {
+              "dense": 0.0910531959900097,
+              "sparse": 0.7035375438792146,
+              "hybrid": 0.2054092601307756,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_15",
+            "query_text": "How many BS level degrees are offered in the College of Engineering at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.016654253005981445,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.9668627450980392,
+              "type": "local_factual",
+              "confidence": 0.7360235294117647
+            },
+            "weight_allocation": {
+              "dense": 0.12943060836220588,
+              "sparse": 0.655868534221269,
+              "hybrid": 0.21470085741652503,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_16",
+            "query_text": "In what year was the College of Engineering at Notre Dame formed?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.016220808029174805,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.1874325980392157,
+              "type": "local_factual",
+              "confidence": 0.7624919117647059
+            },
+            "weight_allocation": {
+              "dense": 0.11109688446813876,
+              "sparse": 0.6011553787883743,
+              "hybrid": 0.28774773674348697,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_17",
+            "query_text": "Before the creation of the College of Engineering similar studies were carried out at which Notre Dame college?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.020511865615844727,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.233713235294118,
+              "type": "local_factual",
+              "confidence": 0.7680455882352941
+            },
+            "weight_allocation": {
+              "dense": 0.12660773831784655,
+              "sparse": 0.58583236437134,
+              "hybrid": 0.2875598973108134,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_18",
+            "query_text": "How many departments are within the Stinson-Remick Hall of Engineering?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.01708197593688965,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.8211825980392153,
+              "type": "local_factual",
+              "confidence": 0.7185419117647058
+            },
+            "weight_allocation": {
+              "dense": 0.14156645347438684,
+              "sparse": 0.6458102052137641,
+              "hybrid": 0.21262334131184912,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "squad_19",
+            "query_text": "The College of Science began to offer civil engineering courses beginning at what time at Notre Dame?",
+            "query_type": "factual",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.01897597312927246,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 2.2318259803921565,
+              "type": "local_factual",
+              "confidence": 0.7678191176470588
+            },
+            "weight_allocation": {
+              "dense": 0.11997283414880926,
+              "sparse": 0.5904775420083076,
+              "hybrid": 0.28954962384288324,
+              "strategy": "precision_focused"
+            }
+          }
+        ],
+        "system_stats": {
+          "avg_confidence": 0.0,
+          "avg_processing_time": 0.016216802597045898,
+          "avg_complexity": 1.8740519532550781,
+          "total_processing_time": 0.32433605194091797,
+          "throughput": 61.66443687130797,
+          "success_rate": 1.0
+        }
+      }
+    },
+    "synthetic": {
+      "intelligent_rag": {
+        "system_name": "intelligent_rag",
+        "total_queries": 20,
+        "successful_queries": 20,
+        "query_results": [
+          {
+            "query_id": "synthetic_0",
+            "query_text": "What is machine learning?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...\n\n根据相关文档2：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.58890791648832,
+            "processing_time": 0.01182413101196289,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.5868566176470589,
+              "type": "local_factual",
+              "confidence": 0.5704227941176471
+            },
+            "weight_allocation": {
+              "dense": 0.15272621465830452,
+              "sparse": 0.6395609673403853,
+              "hybrid": 0.20771281800131022,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_1",
+            "query_text": "How does deep learning work?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...\n\n根据相关文档2：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...",
+            "confidence": 0.5738863048991968,
+            "processing_time": 0.011605978012084961,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.3630718954248366,
+              "type": "local_factual",
+              "confidence": 0.5435686274509803
+            },
+            "weight_allocation": {
+              "dense": 0.10091209022824402,
+              "sparse": 0.6993314577154155,
+              "hybrid": 0.19975645205634043,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_2",
+            "query_text": "What are the benefits of neural networks?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.4938536751520936,
+            "processing_time": 0.013963937759399414,
+            "retrieval_results": 1,
+            "query_analysis": {
+              "complexity": 1.7587867647058824,
+              "type": "local_factual",
+              "confidence": 0.6510544117647059
+            },
+            "weight_allocation": {
+              "dense": 0.15220688973638383,
+              "sparse": 0.6487939530024944,
+              "hybrid": 0.1989991572611218,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_3",
+            "query_text": "Compare artificial intelligence with alternatives",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Natural Language Processing (NLP) is a branch of artificial intelligence that focuses on the interaction between computers and human language. NLP techniques include text analysis, language translatio...\n\n根据相关文档2：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...",
+            "confidence": 0.6020845821601739,
+            "processing_time": 0.01244211196899414,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.4082352941176475,
+              "type": "local_factual",
+              "confidence": 0.6089882352941177
+            },
+            "weight_allocation": {
+              "dense": 0.09671184046455422,
+              "sparse": 0.6878039081831363,
+              "hybrid": 0.2154842513523095,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_4",
+            "query_text": "Explain the concept of natural language processing",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Natural Language Processing (NLP) is a branch of artificial intelligence that focuses on the interaction between computers and human language. NLP techniques include text analysis, language translatio...\n\n根据相关文档2：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.6429742142625345,
+            "processing_time": 0.012130975723266602,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.6462464985994398,
+              "type": "local_factual",
+              "confidence": 0.6975495798319328
+            },
+            "weight_allocation": {
+              "dense": 0.15032550052249286,
+              "sparse": 0.6481476495276713,
+              "hybrid": 0.20152684994983583,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_5",
+            "query_text": "What are the applications of computer vision?",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.012230873107910156,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.570656512605042,
+              "type": "local_factual",
+              "confidence": 0.6284787815126051
+            },
+            "weight_allocation": {
+              "dense": 0.15054574012330588,
+              "sparse": 0.6434057094658552,
+              "hybrid": 0.20604855041083883,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_6",
+            "query_text": "How to implement reinforcement learning?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can ac...\n\n根据相关文档2：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.5751325814815988,
+            "processing_time": 0.012235879898071289,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.407794117647059,
+              "type": "local_factual",
+              "confidence": 0.5489352941176471
+            },
+            "weight_allocation": {
+              "dense": 0.09685827572526758,
+              "sparse": 0.6916332188732803,
+              "hybrid": 0.21150850540145208,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_7",
+            "query_text": "What are the challenges in transformer models?",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.012156963348388672,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.7702100840336135,
+              "type": "local_factual",
+              "confidence": 0.6524252100840336
+            },
+            "weight_allocation": {
+              "dense": 0.1509695874254814,
+              "sparse": 0.6434482159260039,
+              "hybrid": 0.20558219664851476,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_8",
+            "query_text": "Future trends in attention mechanism",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.010895967483520508,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.2286764705882351,
+              "type": "local_factual",
+              "confidence": 0.5874411764705882
+            },
+            "weight_allocation": {
+              "dense": 0.09964899189021748,
+              "sparse": 0.7028384959594185,
+              "hybrid": 0.19751251215036397,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_9",
+            "query_text": "Best practices for BERT",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.010676860809326172,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.0513602941176472,
+              "type": "local_factual",
+              "confidence": 0.5061632352941177
+            },
+            "weight_allocation": {
+              "dense": 0.10169344513884974,
+              "sparse": 0.7017073752114512,
+              "hybrid": 0.19659917964969895,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_10",
+            "query_text": "What is GPT?",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.008209228515625,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.066985294117647,
+              "type": "local_factual",
+              "confidence": 0.4480382352941176
+            },
+            "weight_allocation": {
+              "dense": 0.10633642857468914,
+              "sparse": 0.6920513733229566,
+              "hybrid": 0.2016121981023542,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_11",
+            "query_text": "How does retrieval systems work?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Retrieval Augmented Generation (RAG) is a technique that combines information retrieval with text generation. RAG systems first retrieve relevant documents and then generate answers based on these doc...\n\n根据相关文档2：Vector databases are specialized database systems designed to store and retrieve high-dimensional vectors efficiently. They calculate similarity between vectors to quickly find the most relevant data,...",
+            "confidence": 0.5769106417625457,
+            "processing_time": 0.011619806289672852,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.4323529411764708,
+              "type": "local_factual",
+              "confidence": 0.5518823529411765
+            },
+            "weight_allocation": {
+              "dense": 0.09915695877371403,
+              "sparse": 0.6962619279627915,
+              "hybrid": 0.2045811132634945,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_12",
+            "query_text": "What are the benefits of information retrieval?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Retrieval Augmented Generation (RAG) is a technique that combines information retrieval with text generation. RAG systems first retrieve relevant documents and then generate answers based on these doc...",
+            "confidence": 0.4875925624028193,
+            "processing_time": 0.012179374694824219,
+            "retrieval_results": 1,
+            "query_analysis": {
+              "complexity": 1.6376207983193276,
+              "type": "local_factual",
+              "confidence": 0.6365144957983193
+            },
+            "weight_allocation": {
+              "dense": 0.15045300282502228,
+              "sparse": 0.6418200119844455,
+              "hybrid": 0.2077269851905322,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_13",
+            "query_text": "Compare question answering with alternatives",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.010053873062133789,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.4486764705882353,
+              "type": "local_factual",
+              "confidence": 0.6138411764705882
+            },
+            "weight_allocation": {
+              "dense": 0.09690261795473729,
+              "sparse": 0.7004868569414026,
+              "hybrid": 0.20261052510386018,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_14",
+            "query_text": "Explain the concept of text summarization",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Natural Language Processing (NLP) is a branch of artificial intelligence that focuses on the interaction between computers and human language. NLP techniques include text analysis, language translatio...\n\n根据相关文档2：Retrieval Augmented Generation (RAG) is a technique that combines information retrieval with text generation. RAG systems first retrieve relevant documents and then generate answers based on these doc...",
+            "confidence": 0.4226216648799935,
+            "processing_time": 0.01157999038696289,
+            "retrieval_results": 2,
+            "query_analysis": {
+              "complexity": 1.221985294117647,
+              "type": "local_factual",
+              "confidence": 0.5866382352941176
+            },
+            "weight_allocation": {
+              "dense": 0.0996963455591197,
+              "sparse": 0.7088207397400764,
+              "hybrid": 0.19148291470080395,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_15",
+            "query_text": "What are the applications of sentiment analysis?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Natural Language Processing (NLP) is a branch of artificial intelligence that focuses on the interaction between computers and human language. NLP techniques include text analysis, language translatio...",
+            "confidence": 0.4973886079751067,
+            "processing_time": 0.013118267059326172,
+            "retrieval_results": 1,
+            "query_analysis": {
+              "complexity": 1.8371743697478993,
+              "type": "local_factual",
+              "confidence": 0.6604609243697479
+            },
+            "weight_allocation": {
+              "dense": 0.15086170312297303,
+              "sparse": 0.6418879707663859,
+              "hybrid": 0.2072503261106411,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_16",
+            "query_text": "How to implement named entity recognition?",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Deep learning is a subset of machine learning that uses neural networks with multiple layers to model and understand complex patterns in data. It has achieved remarkable success in image recognition, ...",
+            "confidence": 0.46018336478416366,
+            "processing_time": 0.012429952621459961,
+            "retrieval_results": 1,
+            "query_analysis": {
+              "complexity": 1.3368566176470589,
+              "type": "local_factual",
+              "confidence": 0.6004227941176471
+            },
+            "weight_allocation": {
+              "dense": 0.0985079222354002,
+              "sparse": 0.7000800714332592,
+              "hybrid": 0.2014120063313406,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_17",
+            "query_text": "What are the challenges in part-of-speech tagging?",
+            "query_type": "synthetic",
+            "answer": "抱歉，没有找到相关信息来回答您的问题。",
+            "confidence": 0.0,
+            "processing_time": 0.010996103286743164,
+            "retrieval_results": 0,
+            "query_analysis": {
+              "complexity": 1.6443172268907564,
+              "type": "local_factual",
+              "confidence": 0.6373180672268908
+            },
+            "weight_allocation": {
+              "dense": 0.150326726173132,
+              "sparse": 0.640995326991824,
+              "hybrid": 0.208677946835044,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_18",
+            "query_text": "Future trends in semantic search",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Vector databases are specialized database systems designed to store and retrieve high-dimensional vectors efficiently. They calculate similarity between vectors to quickly find the most relevant data,...",
+            "confidence": 0.4590136350449057,
+            "processing_time": 0.012635231018066406,
+            "retrieval_results": 1,
+            "query_analysis": {
+              "complexity": 1.1161764705882353,
+              "type": "local_factual",
+              "confidence": 0.5739411764705883
+            },
+            "weight_allocation": {
+              "dense": 0.10076686929596708,
+              "sparse": 0.7076752052578376,
+              "hybrid": 0.1915579254461955,
+              "strategy": "precision_focused"
+            }
+          },
+          {
+            "query_id": "synthetic_19",
+            "query_text": "Best practices for vector databases",
+            "query_type": "synthetic",
+            "answer": "根据相关文档1：Vector databases are specialized database systems designed to store and retrieve high-dimensional vectors efficiently. They calculate similarity between vectors to quickly find the most relevant data,...",
+            "confidence": 0.48381046890078183,
+            "processing_time": 0.012305974960327148,
+            "retrieval_results": 1,
+            "query_analysis": {
+              "complexity": 1.5168014705882356,
+              "type": "local_factual",
+              "confidence": 0.6220161764705883
+            },
+            "weight_allocation": {
+              "dense": 0.15250662903702325,
+              "sparse": 0.6421490342034757,
+              "hybrid": 0.20534433675950098,
+              "strategy": "precision_focused"
+            }
+          }
+        ],
+        "system_stats": {
+          "avg_confidence": 0.3432180110097117,
+          "avg_processing_time": 0.01176457405090332,
+          "avg_complexity": 1.4525420751633986,
+          "total_processing_time": 0.2352914810180664,
+          "throughput": 85.00095249289683,
+          "success_rate": 1.0
+        }
+      }
+    }
+  },
+  "end_time": "2025-06-25T01:11:56.983450",
+  "duration": 1.166056
+}

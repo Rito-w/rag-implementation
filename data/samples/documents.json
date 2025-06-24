@@ -1,0 +1,27 @@
+[
+  {
+    "id": "doc_1",
+    "title": "Machine Learning Basics",
+    "content": "Machine learning is a subset of artificial intelligence that enables computers to learn without being explicitly programmed."
+  },
+  {
+    "id": "doc_2",
+    "title": "Neural Networks",
+    "content": "Neural networks are computing systems inspired by biological neural networks. They consist of interconnected nodes that process information."
+  },
+  {
+    "id": "doc_3",
+    "title": "Supervised Learning",
+    "content": "Supervised learning uses labeled training data to learn a mapping from inputs to outputs."
+  },
+  {
+    "id": "doc_4",
+    "title": "Deep Learning Applications",
+    "content": "Deep learning has applications in computer vision, natural language processing, speech recognition, and many other fields."
+  },
+  {
+    "id": "doc_5",
+    "title": "Transformer Architecture",
+    "content": "The transformer is a neural network architecture that relies entirely on attention mechanisms to draw global dependencies."
+  }
+]

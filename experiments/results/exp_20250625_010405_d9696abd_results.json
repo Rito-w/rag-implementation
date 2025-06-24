@@ -1,0 +1,71 @@
+{
+  "experiment_id": "exp_20250625_010405_d9696abd",
+  "start_time": "2025-06-25T01:04:05.824256",
+  "config": {
+    "datasets": [
+      "samples"
+    ],
+    "systems": [
+      "intelligent_rag"
+    ],
+    "metrics": [
+      "retrieval_quality",
+      "answer_quality",
+      "efficiency"
+    ],
+    "sample_size": 5,
+    "repetitions": 1,
+    "timeout": 30
+  },
+  "results": {
+    "samples": {
+      "intelligent_rag": {
+        "system_name": "intelligent_rag",
+        "total_queries": 5,
+        "successful_queries": 0,
+        "query_results": [
+          {
+            "query_id": "1",
+            "query_text": "What is machine learning?",
+            "error": "'RetrievalResult' object has no attribute 'retrieval_results'",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "2",
+            "query_text": "How do neural networks work?",
+            "error": "'RetrievalResult' object has no attribute 'retrieval_results'",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "3",
+            "query_text": "Compare supervised and unsupervised learning",
+            "error": "'RetrievalResult' object has no attribute 'retrieval_results'",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "4",
+            "query_text": "What are the applications of deep learning?",
+            "error": "'RetrievalResult' object has no attribute 'retrieval_results'",
+            "processing_time": 0,
+            "confidence": 0
+          },
+          {
+            "query_id": "5",
+            "query_text": "Explain the transformer architecture",
+            "error": "'RetrievalResult' object has no attribute 'retrieval_results'",
+            "processing_time": 0,
+            "confidence": 0
+          }
+        ],
+        "system_stats": {
+          "error": "No successful queries"
+        }
+      }
+    }
+  },
+  "end_time": "2025-06-25T01:04:05.828908",
+  "duration": 0.004652
+}

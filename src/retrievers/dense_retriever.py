@@ -376,8 +376,8 @@ class SimplifiedVectorIndex:
             similarities.append(similarity)
         
         # 获取top-k结果
-        top_k_indices = np.argsort(similarities)[-k:][::-1]
-        top_k_scores = [similarities[i] for i in top_k_indices]
-        top_k_doc_indices = [self.indices[i] for i in top_k_indices]
+        sorted_indices = np.argsort(similarities)[-k:][::-1]
+        top_k_scores = [similarities[int(i)] for i in sorted_indices]
+        top_k_doc_indices = [self.indices[int(i)] for i in sorted_indices]
         
         return top_k_scores, top_k_doc_indices
