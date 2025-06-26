@@ -1,0 +1,298 @@
+{
+  "retrieval_decider": [
+    {
+      "case": {
+        "query": "What is machine learning?",
+        "expected_retrieve": true,
+        "description": "事实性查询，应该检索"
+      },
+      "decision": {
+        "should_retrieve": false,
+        "confidence": 0.29000000000000004,
+        "reasoning": "查询相对简单，可能不需要外部检索",
+        "token": "[No Retrieve]",
+        "factual_score": 0.6000000000000001,
+        "complexity_score": 0.06666666666666667,
+        "knowledge_score": 0.1
+      },
+      "correct": false
+    },
+    {
+      "case": {
+        "query": "Hello, how are you?",
+        "expected_retrieve": false,
+        "description": "简单问候，不需要检索"
+      },
+      "decision": {
+        "should_retrieve": false,
+        "confidence": 0.21000000000000002,
+        "reasoning": "查询相对简单，可能不需要外部检索",
+        "token": "[No Retrieve]",
+        "factual_score": 0.4,
+        "complexity_score": 0.06666666666666667,
+        "knowledge_score": 0.1
+      },
+      "correct": true
+    },
+    {
+      "case": {
+        "query": "Compare the advantages and disadvantages of neural networks versus traditional algorithms",
+        "expected_retrieve": true,
+        "description": "复杂对比查询，应该检索"
+      },
+      "decision": {
+        "should_retrieve": false,
+        "confidence": 0.135,
+        "reasoning": "查询相对简单，可能不需要外部检索",
+        "token": "[No Retrieve]",
+        "factual_score": 0.0,
+        "complexity_score": 0.35000000000000003,
+        "knowledge_score": 0.1
+      },
+      "correct": false
+    },
+    {
+      "case": {
+        "query": "What is the capital of France?",
+        "expected_retrieve": true,
+        "description": "具体事实查询，应该检索"
+      },
+      "decision": {
+        "should_retrieve": true,
+        "confidence": 0.35000000000000003,
+        "reasoning": "查询相对简单，可能不需要外部检索",
+        "token": "[Retrieve]",
+        "factual_score": 0.6000000000000001,
+        "complexity_score": 0.16666666666666666,
+        "knowledge_score": 0.2
+      },
+      "correct": true
+    },
+    {
+      "case": {
+        "query": "I think it's a nice day",
+        "expected_retrieve": false,
+        "description": "主观表达，不需要检索"
+      },
+      "decision": {
+        "should_retrieve": false,
+        "confidence": 0.049999999999999996,
+        "reasoning": "查询相对简单，可能不需要外部检索",
+        "token": "[No Retrieve]",
+        "factual_score": 0.0,
+        "complexity_score": 0.16666666666666666,
+        "knowledge_score": 0.0
+      },
+      "correct": true
+    }
+  ],
+  "relevance_evaluator": [
+    {
+      "case": {
+        "query": "What is machine learning?",
+        "document": "Machine learning is a subset of artificial intelligence that enables computers to learn and make decisions from data without being explicitly programmed.",
+        "expected_relevant": true,
+        "description": "高度相关的文档"
+      },
+      "assessment": {
+        "is_relevant": false,
+        "relevance_score": 0.14166666666666666,
+        "semantic_score": 0.08333333333333333,
+        "keyword_score": 0.3333333333333333,
+        "coverage_score": 0.0,
+        "token": "[Irrelevant]"
+      },
+      "correct": false
+    },
+    {
+      "case": {
+        "query": "What is machine learning?",
+        "document": "The weather today is sunny and warm. It's a great day for outdoor activities.",
+        "expected_relevant": false,
+        "description": "完全不相关的文档"
+      },
+      "assessment": {
+        "is_relevant": false,
+        "relevance_score": 0.029411764705882353,
+        "semantic_score": 0.058823529411764705,
+        "keyword_score": 0.0,
+        "coverage_score": 0.0,
+        "token": "[Irrelevant]"
+      },
+      "correct": true
+    },
+    {
+      "case": {
+        "query": "How do neural networks work?",
+        "document": "Neural networks are computational models inspired by biological neural networks. They consist of interconnected nodes that process information.",
+        "expected_relevant": true,
+        "description": "相关的技术文档"
+      },
+      "assessment": {
+        "is_relevant": true,
+        "relevance_score": 0.45,
+        "semantic_score": 0.1,
+        "keyword_score": 0.6666666666666666,
+        "coverage_score": 1.0,
+        "token": "[Relevant]"
+      },
+      "correct": true
+    }
+  ],
+  "quality_evaluator": [
+    {
+      "case": {
+        "query": "What is machine learning?",
+        "documents": [
+          {
+            "content": "Machine learning is a subset of AI that enables computers to learn from data."
+          }
+        ],
+        "answer": "Machine learning is a subset of AI that enables computers to learn from data.",
+        "description": "完全支持的答案"
+      },
+      "assessment": {
+        "support": {
+          "support_level": "[Fully Supported]",
+          "support_score": 1.0,
+          "evidence_count": 1,
+          "fact_matches": [
+            "Machine learning is a subset of AI that enables computers to learn from data"
+          ]
+        },
+        "usefulness": {
+          "is_useful": false,
+          "usefulness_score": 0.4893333333333334,
+          "completeness_score": 0.31555555555555553,
+          "accuracy_score": 0.75,
+          "token": "[Not Useful]"
+        },
+        "overall": 0.7957333333333334
+      }
+    },
+    {
+      "case": {
+        "query": "What is the capital of France?",
+        "documents": [
+          {
+            "content": "France is a country in Europe with many beautiful cities."
+          }
+        ],
+        "answer": "The capital of France is Paris.",
+        "description": "部分支持的答案"
+      },
+      "assessment": {
+        "support": {
+          "support_level": "[No Support]",
+          "support_score": 0.04285714285714285,
+          "evidence_count": 0,
+          "fact_matches": []
+        },
+        "usefulness": {
+          "is_useful": false,
+          "usefulness_score": 0.45733333333333337,
+          "completeness_score": 0.2622222222222222,
+          "accuracy_score": 0.75,
+          "token": "[Not Useful]"
+        },
+        "overall": 0.20864761904761908
+      }
+    },
+    {
+      "case": {
+        "query": "What is quantum computing?",
+        "documents": [],
+        "answer": "Quantum computing uses quantum mechanics principles.",
+        "description": "无文档支持的答案"
+      },
+      "assessment": {
+        "support": {
+          "support_level": "[No Support]",
+          "support_score": 0.0,
+          "evidence_count": 0,
+          "fact_matches": []
+        },
+        "usefulness": {
+          "is_useful": false,
+          "usefulness_score": 0.45733333333333337,
+          "completeness_score": 0.2622222222222222,
+          "accuracy_score": 0.75,
+          "token": "[Not Useful]"
+        },
+        "overall": 0.18293333333333336
+      }
+    }
+  ],
+  "integration": [
+    {
+      "query": "What is machine learning?",
+      "result": {
+        "success": true,
+        "processing_time": 0.00479888916015625,
+        "confidence": 0.22720000000000004,
+        "answer_length": 123,
+        "reflection_tokens": [
+          "[No Retrieve]",
+          "[No Support]",
+          "[Not Useful]"
+        ]
+      }
+    },
+    {
+      "query": "How do neural networks work?",
+      "result": {
+        "success": true,
+        "processing_time": 0.002166748046875,
+        "confidence": 0.2650666666666667,
+        "answer_length": 164,
+        "reflection_tokens": [
+          "[No Retrieve]",
+          "[No Support]",
+          "[Not Useful]"
+        ]
+      }
+    },
+    {
+      "query": "Compare supervised and unsupervised learning",
+      "result": {
+        "success": true,
+        "processing_time": 0.0033011436462402344,
+        "confidence": 0.21226666666666666,
+        "answer_length": 134,
+        "reflection_tokens": [
+          "[No Retrieve]",
+          "[No Support]",
+          "[Not Useful]"
+        ]
+      }
+    },
+    {
+      "query": "Hello, how are you?",
+      "result": {
+        "success": true,
+        "processing_time": 0.005589962005615234,
+        "confidence": 0.1706666666666667,
+        "answer_length": 109,
+        "reflection_tokens": [
+          "[No Retrieve]",
+          "[No Support]",
+          "[Not Useful]"
+        ]
+      }
+    },
+    {
+      "query": "What is the weather like today?",
+      "result": {
+        "success": true,
+        "processing_time": 0.004240751266479492,
+        "confidence": 0.23706666666666668,
+        "answer_length": 129,
+        "reflection_tokens": [
+          "[Retrieve]",
+          "[No Support]",
+          "[Not Useful]"
+        ]
+      }
+    }
+  ]
+}

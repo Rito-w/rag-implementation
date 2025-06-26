@@ -1,0 +1,158 @@
+{
+  "self_rag_results": [
+    {
+      "query": "What is machine learning?",
+      "answer": "Based on general knowledge, machine learning? is a concept that requires specific domain knowledge for accurate definition.",
+      "processing_time": 0.023447751998901367,
+      "confidence": 0.22720000000000004,
+      "success": true,
+      "reflection_tokens": [
+        "[No Retrieve]",
+        "[No Support]",
+        "[Not Useful]"
+      ],
+      "answer_length": 123
+    },
+    {
+      "query": "How do neural networks work?",
+      "answer": "To answer 'How do neural networks work?', specific procedural knowledge would be needed. This typically involves multiple steps that depend on the specific context.",
+      "processing_time": 0.004601955413818359,
+      "confidence": 0.2650666666666667,
+      "success": true,
+      "reflection_tokens": [
+        "[No Retrieve]",
+        "[No Support]",
+        "[Not Useful]"
+      ],
+      "answer_length": 164
+    },
+    {
+      "query": "What is artificial intelligence?",
+      "answer": "Based on general knowledge, artificial intelligence? is a concept that requires specific domain knowledge for accurate definition.",
+      "processing_time": 0.00422978401184082,
+      "confidence": 0.22720000000000004,
+      "success": true,
+      "reflection_tokens": [
+        "[No Retrieve]",
+        "[No Support]",
+        "[Not Useful]"
+      ],
+      "answer_length": 130
+    },
+    {
+      "query": "Explain deep learning",
+      "answer": "To properly answer 'Explain deep learning', additional context or domain-specific information would be helpful.",
+      "processing_time": 0.002830982208251953,
+      "confidence": 0.19573333333333337,
+      "success": true,
+      "reflection_tokens": [
+        "[No Retrieve]",
+        "[No Support]",
+        "[Not Useful]"
+      ],
+      "answer_length": 111
+    },
+    {
+      "query": "What are the applications of AI?",
+      "answer": "To properly answer 'What are the applications of AI?', additional context or domain-specific information would be helpful.",
+      "processing_time": 0.0023717880249023438,
+      "confidence": 0.2138666666666667,
+      "success": true,
+      "reflection_tokens": [
+        "[No Retrieve]",
+        "[No Support]",
+        "[Not Useful]"
+      ],
+      "answer_length": 122
+    },
+    {
+      "query": "Compare supervised and unsupervised learning",
+      "answer": "To properly answer 'Compare supervised and unsupervised learning', additional context or domain-specific information would be helpful.",
+      "processing_time": 0.002165079116821289,
+      "confidence": 0.21226666666666666,
+      "success": true,
+      "reflection_tokens": [
+        "[No Retrieve]",
+        "[No Support]",
+        "[Not Useful]"
+      ],
+      "answer_length": 134
+    },
+    {
+      "query": "What is natural language processing?",
+      "answer": "Based on general knowledge, natural language processing? is a concept that requires specific domain knowledge for accurate definition.",
+      "processing_time": 0.0020601749420166016,
+      "confidence": 0.23546666666666669,
+      "success": true,
+      "reflection_tokens": [
+        "[No Retrieve]",
+        "[No Support]",
+        "[Not Useful]"
+      ],
+      "answer_length": 134
+    },
+    {
+      "query": "How does computer vision work?",
+      "answer": "To answer 'How does computer vision work?', specific procedural knowledge would be needed. This typically involves multiple steps that depend on the specific context.",
+      "processing_time": 0.0022208690643310547,
+      "confidence": 0.2717333333333333,
+      "success": true,
+      "reflection_tokens": [
+        "[No Retrieve]",
+        "[No Support]",
+        "[Not Useful]"
+      ],
+      "answer_length": 166
+    },
+    {
+      "query": "What is reinforcement learning?",
+      "answer": "Based on general knowledge, reinforcement learning? is a concept that requires specific domain knowledge for accurate definition.",
+      "processing_time": 0.0022399425506591797,
+      "confidence": 0.22720000000000004,
+      "success": true,
+      "reflection_tokens": [
+        "[No Retrieve]",
+        "[No Support]",
+        "[Not Useful]"
+      ],
+      "answer_length": 129
+    },
+    {
+      "query": "Explain the concept of big data",
+      "answer": "To properly answer 'Explain the concept of big data', additional context or domain-specific information would be helpful.",
+      "processing_time": 0.003876924514770508,
+      "confidence": 0.20053333333333337,
+      "success": true,
+      "reflection_tokens": [
+        "[No Retrieve]",
+        "[No Support]",
+        "[Not Useful]"
+      ],
+      "answer_length": 121
+    }
+  ],
+  "analysis": {
+    "basic_stats": {
+      "total_queries": 10,
+      "success_rate": 1.0,
+      "avg_processing_time": 0.005004525184631348,
+      "avg_confidence": 0.2276266666666667,
+      "avg_answer_length": 133.4
+    },
+    "reflection_analysis": {
+      "token_distribution": {
+        "[No Retrieve]": 10,
+        "[No Support]": 10,
+        "[Not Useful]": 10
+      },
+      "retrieve_rate": 0.0,
+      "total_tokens": 30
+    },
+    "performance_rating": {
+      "speed": "优秀",
+      "reliability": "优秀",
+      "confidence": "偏低"
+    }
+  },
+  "timestamp": "20250626_213852"
+}

@@ -108,10 +108,15 @@ class RetrievalResult:
     processing_time: float
     timestamp: str
     system_version: str
-    
+
+    # 处理状态
+    success: bool = True
+    error_message: Optional[str] = None
+
     # 详细分析结果 (可选)
     query_analysis: Optional[Any] = None      # QueryAnalysis对象
     weight_allocation: Optional[Any] = None   # WeightAllocation对象
+    explanation: Optional[Dict[str, Any]] = None  # 额外解释信息
     
     def __post_init__(self):
         """Post-initialization validation."""
